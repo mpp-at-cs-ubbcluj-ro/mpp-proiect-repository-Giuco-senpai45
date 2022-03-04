@@ -1,0 +1,28 @@
+04 Mar 2022 18:45:00,780 TRACE repository.AbstractRepository 22 add - Enter  parameters Participant{name='P1', email='email1@mail.com', phone='1234'}
+04 Mar 2022 18:45:00,784 TRACE repository.AbstractRepository 29 add - Exit
+04 Mar 2022 18:45:00,784 TRACE repository.AbstractRepository 22 add - Enter  parameters Participant{name='P2', email='email2@mail.com', phone='5677'}
+04 Mar 2022 18:45:00,785 ERROR repository.AbstractRepository 25 add - Throwing
+java.lang.RuntimeException: Element already exists!!!
+	at repository.AbstractRepository.add(AbstractRepository.java:25) [main/:?]
+	at MatchesMain.main(MatchesMain.java:12) [main/:?]
+04 Mar 2022 18:45:05,021 TRACE repository.AbstractRepository 22 add - Enter  parameters Participant{name='P1', email='email1@mail.com', phone='1234'}
+04 Mar 2022 18:45:05,026 TRACE repository.AbstractRepository 29 add - Exit
+04 Mar 2022 18:45:05,026 TRACE repository.AbstractRepository 22 add - Enter  parameters Participant{name='P2', email='email2@mail.com', phone='5677'}
+04 Mar 2022 18:45:05,026 ERROR repository.AbstractRepository 25 add - Throwing
+java.lang.RuntimeException: Element already exists!!!
+	at repository.AbstractRepository.add(AbstractRepository.java:25) [main/:?]
+	at MatchesMain.main(MatchesMain.java:12) [main/:?]
+04 Mar 2022 18:45:25,145 TRACE repository.AbstractRepository 22 add - Enter  parameters Participant{name='P1', email='email1@mail.com', phone='1234'}
+04 Mar 2022 18:45:25,148 TRACE repository.AbstractRepository 29 add - Exit
+04 Mar 2022 18:45:25,148 TRACE repository.AbstractRepository 22 add - Enter  parameters Participant{name='P2', email='email2@mail.com', phone='5677'}
+04 Mar 2022 18:45:25,148 ERROR repository.AbstractRepository 25 add - Throwing
+java.lang.RuntimeException: Element already exists!!!
+	at repository.AbstractRepository.add(AbstractRepository.java:25) [main/:?]
+	at MatchesMain.main(MatchesMain.java:12) [main/:?]
+04 Mar 2022 18:47:00,077 TRACE repository.AbstractRepository 22 add - Enter  parameters Participant{name='P1', email='email1@mail.com', phone='1234'}
+04 Mar 2022 18:47:00,080 TRACE repository.AbstractRepository 29 add - Exit
+04 Mar 2022 18:47:00,080 TRACE repository.AbstractRepository 22 add - Enter  parameters Participant{name='P2', email='email2@mail.com', phone='5677'}
+04 Mar 2022 18:47:00,080 ERROR repository.AbstractRepository 25 add - Throwing
+java.lang.RuntimeException: Element already exists!!!
+	at repository.AbstractRepository.add(AbstractRepository.java:25) [main/:?]
+	at MatchesMain.main(MatchesMain.java:12) [main/:?]
