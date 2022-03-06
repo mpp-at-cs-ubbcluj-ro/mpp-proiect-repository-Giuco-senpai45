@@ -1,0 +1,15 @@
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\bin\Debug\net6.0\MPP.exe
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\bin\Debug\net6.0\MPP.deps.json
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\bin\Debug\net6.0\MPP.runtimeconfig.json
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\bin\Debug\net6.0\MPP.dll
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\bin\Debug\net6.0\MPP.pdb
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\obj\Debug\net6.0\MPP.csproj.AssemblyReference.cache
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\obj\Debug\net6.0\MPP.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\obj\Debug\net6.0\MPP.AssemblyInfoInputs.cache
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\obj\Debug\net6.0\MPP.AssemblyInfo.cs
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\obj\Debug\net6.0\MPP.csproj.CoreCompileInputs.cache
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\obj\Debug\net6.0\MPP.dll
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\obj\Debug\net6.0\refint\MPP.dll
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\obj\Debug\net6.0\MPP.pdb
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\obj\Debug\net6.0\MPP.genruntimeconfig.cache
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\obj\Debug\net6.0\ref\MPP.dll
