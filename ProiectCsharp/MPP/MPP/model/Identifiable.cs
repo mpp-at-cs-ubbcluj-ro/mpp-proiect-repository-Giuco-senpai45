@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MPP.model
 {
-    internal interface Identifiable<Tid>
+    public interface Identifiable<Tid>
     {
         Tid Id { get; set; }
     }

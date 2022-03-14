@@ -6,59 +6,71 @@ using System.Threading.Tasks;
 
 namespace MPP.model
 {
-    internal class Match : Identifiable<int>
+    public class Match : Identifiable<int>
     {
-        private int _id;
-        private string _team1;
-        private string _team2;
-        private string _type;
-        private int _nrOfSeats;
-
-        public Match(int id, string team1, string team2, string type, int nrOfSeats)
-        {
-            Id = id;
-            Team1 = team1;
-            Team2 = team2;
-            Type = type;
-            NrOfSeats = nrOfSeats;
-        }
-
-        public Match(string team1, string team2, string type, int nrOfSeats)
-        {
-            Team1 = team1;
-            Team2 = team2;
-            Type = type;
-            NrOfSeats = nrOfSeats;
-        }
-
-        public int Id
-        {
-            get { return _id; }
-            set { _id = value; }
-        }
+        public int Id { get; set; }
 
         public string Team1
         {
-            get { return _team1; }
-            set { _team1 = value; }
+            get;
+            set;
         }
-
         public string Team2
         {
-            get { return _team2; }
-            set { _team2 = value; }
+            get;
+            set;
         }
 
-        public string Type
+        public string MatchType
         {
-            get { return _type; }
-            set { _type = value; }
+            get;
+            set;
         }
 
         public int NrOfSeats
         {
-            get { return _nrOfSeats; }
-            set { _nrOfSeats = value; }
+            get;
+            set;
+        }
+
+        public double Price
+        {
+            get;
+            set;
+        }
+
+        public Match(int id, string team1, string team2, string matchType, int nrOfSeats, double price)
+        {
+            Id = id;
+            Team1 = team1;
+            Team2 = team2;
+            MatchType = matchType;
+            NrOfSeats = nrOfSeats;
+            Price = price;
+        }
+
+        public Match(string team1, string team2, string matchType, int nrOfSeats, double price)
+        {
+            Team1 = team1;
+            Team2 = team2;
+            MatchType = matchType;
+            NrOfSeats = nrOfSeats;
+            Price = price;
+        }
+
+        public Match(int id)
+        {
+            Id = id;
+        }
+        
+        public Match()
+        {
+            
+        }
+
+        public override string ToString()
+        {
+            return Id + " " + Team1 + " " + Team2 + " " + NrOfSeats + " " + Price;
         }
     }
 }

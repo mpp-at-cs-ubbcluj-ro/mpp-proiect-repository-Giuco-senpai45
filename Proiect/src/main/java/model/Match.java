@@ -9,12 +9,31 @@ public class Match implements Identifiable<Integer>, Serializable {
     private String team2;
     private String type;
     private Integer nrOfSeats;
+    private Double price;
 
-    public Match(String team1, String team2, String type, Integer nrOfSeats) {
+    public Match(Integer ID, String team1, String team2, String type, Integer nrOfSeats, Double price) {
+        this.ID = ID;
         this.team1 = team1;
         this.team2 = team2;
         this.type = type;
         this.nrOfSeats = nrOfSeats;
+        this.price = price;
+    }
+
+    public Match(String team1, String team2, String type, Integer nrOfSeats, Double price) {
+        this.team1 = team1;
+        this.team2 = team2;
+        this.type = type;
+        this.nrOfSeats = nrOfSeats;
+        this.price = price;
+    }
+
+    public Match() {
+
+    }
+
+    public Match(Integer mid) {
+        this.ID = mid;
     }
 
     public String getTeam1() {
@@ -49,15 +68,12 @@ public class Match implements Identifiable<Integer>, Serializable {
         this.nrOfSeats = nrOfSeats;
     }
 
-    @Override
-    public String toString() {
-        return "Match{" +
-                "ID=" + ID +
-                ", team1='" + team1 + '\'' +
-                ", team2='" + team2 + '\'' +
-                ", type='" + type + '\'' +
-                ", nrOfSeats=" + nrOfSeats +
-                '}';
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
     }
 
     @Override
@@ -68,5 +84,10 @@ public class Match implements Identifiable<Integer>, Serializable {
     @Override
     public void setId(Integer id) {
         ID = id;
+    }
+
+    @Override
+    public String toString() {
+        return ID + " " + team1 + " " + team2 +  " " + type + " " + nrOfSeats + " " + price;
     }
 }

@@ -4,48 +4,53 @@ import java.io.Serializable;
 
 public class Ticket implements Identifiable<Integer>, Serializable {
     private Integer ID;
-    private Integer seat;
-    private Long price;
-    private Integer matchID;
+    private Integer quantity;
+    private Match match;
+    private String customerName;
 
-    public Ticket(Integer seat, Long price, Integer matchID) {
-        this.seat = seat;
-        this.price = price;
-        this.matchID = matchID;
+    public Ticket() {
+
     }
 
-    public Integer getSeat() {
-        return seat;
+    public Integer getQuantity() {
+        return quantity;
     }
 
-    public void setSeat(Integer seat) {
-        this.seat = seat;
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
     }
 
-    public Long getPrice() {
-        return price;
+    public Match getMatch() {
+        return match;
     }
 
-    public void setPrice(Long price) {
-        this.price = price;
+    public void setMatch(Match match) {
+        this.match = match;
     }
 
-    public Integer getMatchID() {
-        return matchID;
+    public Ticket(Integer quantity, Match match, String customerName) {
+        this.quantity = quantity;
+        this.match = match;
+        this.customerName = customerName;
     }
 
-    public void setMatchID(Integer matchID) {
-        this.matchID = matchID;
+    public Ticket(Integer ID, Integer quantity, Match match, String customerName) {
+        this.ID = ID;
+        this.quantity = quantity;
+        this.match = match;
+        this.customerName = customerName;
     }
 
-    @Override
-    public String toString() {
-        return "Ticket{" +
-                "ID=" + ID +
-                ", seat=" + seat +
-                ", price=" + price +
-                ", matchID=" + matchID +
-                '}';
+    public Ticket(Integer ID) {
+        this.ID = ID;
+    }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
     }
 
     @Override
@@ -56,5 +61,10 @@ public class Ticket implements Identifiable<Integer>, Serializable {
     @Override
     public void setId(Integer id) {
         ID = id;
+    }
+
+    @Override
+    public String toString() {
+        return ID + " " +  customerName + " " + quantity + " " + match.toString();
     }
 }

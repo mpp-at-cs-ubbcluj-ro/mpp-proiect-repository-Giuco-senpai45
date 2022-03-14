@@ -6,49 +6,47 @@ using System.Threading.Tasks;
 
 namespace MPP.model
 {
-    internal class Ticket : Identifiable<int>
+    public class Ticket : Identifiable<int>
     {
-        private int _id;
-        private int _seat;
-        private long _price;
-        private int _matchId;
+        public int Id { get; set; }
 
-        public Ticket(int seat, long price, int matchId)
+        public int Quantity
         {
-            Seat = seat;
-            Price = price;
-            MatchId = matchId;
+            get;
+            set;
         }
 
-        public Ticket(int id, int seat, long price, int matchId)
+        public Match TicketMatch
+        {
+            get;
+            set;
+        }
+
+        public string Name
+        {
+            get;
+            set;
+        }
+
+        public Ticket()
+        {
+        }
+        
+        public Ticket(int id)
         {
             Id = id;
-            Seat = seat;
-            Price = price;
-            MatchId = matchId;
         }
 
-        public int Id
+        public Ticket(int id,int quantity, Match ticketMatch, string name)
         {
-            get { return _id; }
-            set { _id = value; }
+            Id = id;
+            Quantity = quantity;
+            TicketMatch = ticketMatch;
+            Name = name;
         }
-
-        public int Seat
+        public override string ToString()
         {
-            get { return _seat; }
-            set { _seat = value; }
-
-        }
-        public long Price
-        {
-            get { return _price; }
-            set { _price = value; }
-        }
-        public int MatchId
-        {
-            get { return _matchId; }
-            set { _matchId = value; }
+            return Id + " " + Name + " " + TicketMatch + " " + Quantity;
         }
     }
 }
