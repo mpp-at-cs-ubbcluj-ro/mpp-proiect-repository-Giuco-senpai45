@@ -6,7 +6,7 @@ using MPP.model;
 using MPP.repository;
 using log4net;
 using log4net.Config;
-[assembly: XmlConfigurator(Watch = true)]
+// [assembly: XmlConfigurator(Watch = true)]
 
 namespace MPP
 {
@@ -14,8 +14,8 @@ namespace MPP
     {
         static void Main(string[] args)
         {
-            var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
-            XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
+            //var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
+            XmlConfigurator.Configure(new System.IO.FileInfo("log4net.config"));
             IDictionary<String, string> props = new SortedList<String, String>();
             props.Add("ConnectionString", GetConnectionStringByName("basketDB"));
 

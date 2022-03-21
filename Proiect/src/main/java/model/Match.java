@@ -1,6 +1,8 @@
 package model;
 
 import java.io.Serializable;
+import java.sql.Timestamp;
+import java.util.Date;
 
 public class Match implements Identifiable<Integer>, Serializable {
 
@@ -9,23 +11,27 @@ public class Match implements Identifiable<Integer>, Serializable {
     private String team2;
     private String type;
     private Integer nrOfSeats;
+    private Timestamp date;
     private Double price;
+    private String state;
 
-    public Match(Integer ID, String team1, String team2, String type, Integer nrOfSeats, Double price) {
+    public Match(Integer ID, String team1, String team2, String type, Integer nrOfSeats, Double price,Timestamp date) {
         this.ID = ID;
         this.team1 = team1;
         this.team2 = team2;
         this.type = type;
         this.nrOfSeats = nrOfSeats;
         this.price = price;
+        this.date = date;
     }
 
-    public Match(String team1, String team2, String type, Integer nrOfSeats, Double price) {
+    public Match(String team1, String team2, String type, Integer nrOfSeats, Double price,Timestamp date) {
         this.team1 = team1;
         this.team2 = team2;
         this.type = type;
         this.nrOfSeats = nrOfSeats;
         this.price = price;
+        this.date = date;
     }
 
     public Match() {
@@ -76,6 +82,14 @@ public class Match implements Identifiable<Integer>, Serializable {
         this.price = price;
     }
 
+    public Timestamp getDate() {
+        return date;
+    }
+
+    public void setDate(Timestamp date) {
+        this.date = date;
+    }
+
     @Override
     public Integer getID() {
         return ID;
@@ -86,8 +100,16 @@ public class Match implements Identifiable<Integer>, Serializable {
         ID = id;
     }
 
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
     @Override
     public String toString() {
-        return ID + " " + team1 + " " + team2 +  " " + type + " " + nrOfSeats + " " + price;
+        return new Date(date.getTime()) + "  " + team1 + "  v.s " + team2 + "  " + type + "  " + price + "  " + nrOfSeats;
     }
 }

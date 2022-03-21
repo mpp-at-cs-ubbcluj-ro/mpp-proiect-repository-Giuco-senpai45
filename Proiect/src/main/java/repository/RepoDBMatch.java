@@ -6,16 +6,13 @@ import model.Organiser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Properties;
 
-public class RepoDBMatch implements Repository<Match, Integer> {
+public class RepoDBMatch implements IRepoMatch {
 
     private JdbcUtils dbUtils;
     private static final Logger logger= LogManager.getLogger();
@@ -28,14 +25,14 @@ public class RepoDBMatch implements Repository<Match, Integer> {
     public void add(Match el) {
         logger.traceEntry("saving match {}", el);
         Connection con = dbUtils.getConnection();
-        try(PreparedStatement preparedStatement = con.prepareStatement("insert into Match (Id, Team1, Team2, Type, NrOfSeats, Price) values (?, ?, ?, ?, ?, ?)")){
+        try(PreparedStatement preparedStatement = con.prepareStatement("insert into Match (Team1, Team2, Type, NrOfSeats, Price,Date) values (?, ?, ?, ?, ?, ?)")){
 
-            preparedStatement.setInt(1, el.getID());
-            preparedStatement.setString(2, el.getTeam1());
-            preparedStatement.setString(3, el.getTeam2());
-            preparedStatement.setString(4, el.getType());
-            preparedStatement.setInt(5, el.getNrOfSeats());
-            preparedStatement.setDouble(6, el.getPrice());
+            preparedStatement.setString(1, el.getTeam1());
+            preparedStatement.setString(2, el.getTeam2());
+            preparedStatement.setString(3, el.getType());
+            preparedStatement.setInt(4, el.getNrOfSeats());
+            preparedStatement.setDouble(5, el.getPrice());
+            preparedStatement.setTimestamp(6, el.getDate());
             int result = preparedStatement.executeUpdate();
             logger.trace("Saved {} instances", result);
         } catch (SQLException ex) {
@@ -65,14 +62,15 @@ public class RepoDBMatch implements Repository<Match, Integer> {
     public void update(Match el, Integer id) {
         logger.traceEntry("updating match {}", el);
         Connection con = dbUtils.getConnection();
-        try(PreparedStatement preparedStatement = con.prepareStatement("Update Match set Team1 = ?,Team2 = ?,Type = ?, NrOfSeats = ?, Price = ?  where Id = ?")){
+        try(PreparedStatement preparedStatement = con.prepareStatement("Update Match set Team1 = ?,Team2 = ?,Type = ?, NrOfSeats = ?, Price = ?, Date = ?  where Id = ?")){
 
             preparedStatement.setString(1, el.getTeam1());
             preparedStatement.setString(2, el.getTeam2());
             preparedStatement.setString(3, el.getType());
             preparedStatement.setInt(4, el.getID());
             preparedStatement.setDouble(5, el.getPrice());
-            preparedStatement.setInt(6,el.getID());
+            preparedStatement.setTimestamp(6, el.getDate());
+            preparedStatement.setInt(7,el.getID());
             int result = preparedStatement.executeUpdate();
             logger.trace("Updated {} instances", result);
         } catch (SQLException ex) {
@@ -98,12 +96,14 @@ public class RepoDBMatch implements Repository<Match, Integer> {
                     String type = result.getString("Type");
                     Integer nrOfSeats = result.getInt("NrOfSeats");
                     Double price = result.getDouble("Price");
+                    Timestamp date = result.getTimestamp("Date");
                     match.setId(Id);
                     match.setTeam1(team1);
                     match.setTeam1(team2);
                     match.setType(type);
                     match.setNrOfSeats(nrOfSeats);
                     match.setPrice(price);
+                    match.setDate(date);
                     logger.trace("Found {} instances", match);
                 }
             }
@@ -129,7 +129,8 @@ public class RepoDBMatch implements Repository<Match, Integer> {
                     String type = result.getString("Type");
                     Integer nrOfSeats = result.getInt("NrOfSeats");
                     Double price = result.getDouble("Price");
-                    Match match = new Match(idb, team1, team2, type, nrOfSeats ,price);
+                    Timestamp date = result.getTimestamp("Date");
+                    Match match = new Match(idb, team1, team2, type, nrOfSeats ,price,date);
                     matches.add(match);
                 }
             }
@@ -156,7 +157,52 @@ public class RepoDBMatch implements Repository<Match, Integer> {
                     String type = result.getString("Type");
                     Integer nrOfSeats = result.getInt("NrOfSeats");
                     Double price = result.getDouble("Price");
-                    Match match = new Match(idb, team1, team2, type, nrOfSeats ,price);
+                    Timestamp date = result.getTimestamp("Date");
+                    Match match = new Match(idb, team1, team2, type, nrOfSeats ,price,date);
+                    matches.add(match);
+                }
+            }
+        }
+        catch (SQLException e) {
+            logger.error(e);
+            System.err.println("Error DB" + e);
+        }
+        logger.traceExit(matches);
+        return matches;
+    }
+
+    @Override
+    public void updateNoOfSeats(Integer quantity, Integer id) {
+        logger.traceEntry("updating match {}", id);
+        Connection con = dbUtils.getConnection();
+        try(PreparedStatement preparedStatement = con.prepareStatement("Update Match set NrOfSeats = ? where Id = ?")){
+            preparedStatement.setInt(1, quantity);
+            preparedStatement.setInt(2, id);
+            int result = preparedStatement.executeUpdate();
+            logger.trace("Updated {} instances", result);
+        } catch (SQLException ex) {
+            logger.error(ex);
+            System.err.println("Error DB" + ex);
+        }
+        logger.traceExit();
+    }
+
+    @Override
+    public Collection<Match> getAllDescendingNoOfSeats() {
+        logger.traceEntry("find all matches");
+        Connection con = dbUtils.getConnection();
+        List<Match> matches = new ArrayList<>();
+        try(PreparedStatement preparedStatement = con.prepareStatement("select * from Match order by NrOfSeats desc")){
+            try(ResultSet result = preparedStatement.executeQuery()){
+                while(result.next()){
+                    int idb = result.getInt("Id");
+                    String team1 = result.getString("Team1");
+                    String team2 = result.getString("Team2");
+                    String type = result.getString("Type");
+                    Integer nrOfSeats = result.getInt("NrOfSeats");
+                    Double price = result.getDouble("Price");
+                    Timestamp date = result.getTimestamp("Date");
+                    Match match = new Match(idb, team1, team2, type, nrOfSeats ,price,date);
                     matches.add(match);
                 }
             }

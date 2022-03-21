@@ -1,4 +1,4 @@
 Manifest-Version: 1.0
-Main-Class: MatchesMain
+Main-Class: mains.UIMain
 Multi-Release: true
 

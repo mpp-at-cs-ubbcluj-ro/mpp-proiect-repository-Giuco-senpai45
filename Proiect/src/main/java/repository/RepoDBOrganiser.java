@@ -14,7 +14,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Properties;
 
-public class RepoDBOrganiser implements Repository<Organiser, Integer> {
+public class RepoDBOrganiser implements IRepoOrganiser {
 
     private JdbcUtils dbUtils;
     private static final Logger logger= LogManager.getLogger();
@@ -27,10 +27,10 @@ public class RepoDBOrganiser implements Repository<Organiser, Integer> {
     public void add(Organiser el) {
         logger.traceEntry("saving organiser {}", el);
         Connection con = dbUtils.getConnection();
-        try(PreparedStatement preparedStatement = con.prepareStatement("insert into Organiser (Id, Name) values (?, ?)")){
+        try(PreparedStatement preparedStatement = con.prepareStatement("insert into Organiser (Name,Password) values (?,?)")){
 
-            preparedStatement.setInt(1, el.getID());
-            preparedStatement.setString(2, el.getName());
+            preparedStatement.setString(1, el.getName());
+            preparedStatement.setString(2,el.getPassword());
             int result = preparedStatement.executeUpdate();
             logger.trace("Saved {} instances", result);
         } catch (SQLException ex) {
@@ -60,10 +60,11 @@ public class RepoDBOrganiser implements Repository<Organiser, Integer> {
     public void update(Organiser el, Integer id) {
         logger.traceEntry("updating organiser {}", el);
         Connection con = dbUtils.getConnection();
-        try(PreparedStatement preparedStatement = con.prepareStatement("Update Organiser set Name = ? where Id = ?")){
+        try(PreparedStatement preparedStatement = con.prepareStatement("Update Organiser set Name = ?, Passwords = ? where Id = ?")){
 
             preparedStatement.setString(1, el.getName());
-            preparedStatement.setInt(2, el.getID());
+            preparedStatement.setString(2, el.getPassword());
+            preparedStatement.setInt(3, el.getID());
             int result = preparedStatement.executeUpdate();
             logger.trace("Updated {} instances", result);
         } catch (SQLException ex) {
@@ -85,8 +86,10 @@ public class RepoDBOrganiser implements Repository<Organiser, Integer> {
                 while(result.next()){
                     int Id = result.getInt("Id");
                     String name = result.getString("Name");
+                    String password = result.getString("Password");
                     organiser.setId(Id);
                     organiser.setName(name);
+                    organiser.setPassword(password);
                 logger.trace("Found {} instances", organiser);
                 }
             }
@@ -142,5 +145,32 @@ public class RepoDBOrganiser implements Repository<Organiser, Integer> {
         }
         logger.traceExit(organisers);
         return organisers;
+    }
+
+    @Override
+    public Organiser findByNameAndPassword(String name, String password) {
+        logger.traceEntry("Finding by name {}", name);
+        Connection con = dbUtils.getConnection();
+        Organiser organiser = new Organiser();
+        try(PreparedStatement preparedStatement = con.prepareStatement("select * from Organiser where Name = ? and Password = ?")){
+            preparedStatement.setString(1, name);
+            preparedStatement.setString(2, password);
+            try(ResultSet result = preparedStatement.executeQuery()) {
+                while(result.next()){
+                    Integer Id = result.getInt("Id");
+                    String orgName = result.getString("Name");
+                    String orgPass = result.getString("Password");
+                    organiser.setId(Id);
+                    organiser.setName(orgName);
+                    organiser.setPassword(orgPass);
+                    logger.trace("Found {} instances", organiser);
+                }
+            }
+        } catch (SQLException ex) {
+            logger.error(ex);
+            System.err.println("Error DB" + ex);
+        }
+        logger.traceExit();
+        return organiser;
     }
 }

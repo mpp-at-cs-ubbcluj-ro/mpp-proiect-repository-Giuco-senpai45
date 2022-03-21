@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
 }
 
 group 'ro.ubb.mpp'
@@ -11,26 +12,33 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
 
-    implementation 'org.apache.logging.log4j:log4j-core:2.14.0'
-    implementation 'org.apache.logging.log4j:log4j-api:2.14.0'
-
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.17.0'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.17.0'
+    implementation group: 'com.google.guava', name:'guava', version:'31.0.1-jre'
     runtimeOnly group: 'org.xerial', name: 'sqlite-jdbc', version: '3.36.0.3'
 }
+
 
 test {
     useJUnitPlatform()
 }
 
+javafx {
+    version = "13"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
 application {
-    mainClass = 'MatchesMain'
+    mainClass = 'mains.UIMain'
 }
 
 jar{
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     manifest{
-        attributes('Main-Class':'MatchesMain')
+        attributes('Main-Class':'mains.UIMain')
         attributes 'Multi-Release': 'true'
     }
     from{

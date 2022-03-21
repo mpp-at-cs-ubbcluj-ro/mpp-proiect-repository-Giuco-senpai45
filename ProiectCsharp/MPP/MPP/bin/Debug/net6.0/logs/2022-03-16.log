@@ -1,0 +1,21 @@
+2022-03-16 00:00:12,245 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-16 00:00:12,269 [1] INFO  SortingTaskDbRepository [(null)] - finding one organiser 2
+2022-03-16 00:00:12,314 [1] INFO  SortingTaskDbRepository [(null)] - Found 0  instance
+2022-03-16 00:00:12,315 [1] INFO  SortingTaskDbRepository [(null)] - saving organiser 2 Pavel
+2022-03-16 00:00:12,325 [1] INFO  SortingTaskDbRepository [(null)] - Saved 1 instance
+2022-03-16 00:00:12,326 [1] INFO  SortingTaskDbRepository [(null)] - finding all organisers
+2022-03-16 00:00:12,329 [1] INFO  SortingTaskDbRepository [(null)] - found 2 organisers
+2022-03-16 00:00:12,331 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-16 00:00:12,331 [1] INFO  SortingTaskDbRepository [(null)] - finding one match 1
+2022-03-16 00:00:12,332 [1] INFO  SortingTaskDbRepository [(null)] - Found 0   0 0 instance
+2022-03-16 00:00:12,333 [1] INFO  SortingTaskDbRepository [(null)] - saving match 1 T1 T2 120 12.3
+2022-03-16 00:00:12,341 [1] INFO  SortingTaskDbRepository [(null)] - Saved 1 instance
+2022-03-16 00:00:12,342 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-16 00:00:12,343 [1] INFO  SortingTaskDbRepository [(null)] - found 1 matches
+2022-03-16 00:00:12,345 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-16 00:00:12,345 [1] INFO  SortingTaskDbRepository [(null)] - finding one ticket 1
+2022-03-16 00:00:12,346 [1] INFO  SortingTaskDbRepository [(null)] - Found 0   0 instance
+2022-03-16 00:00:12,347 [1] INFO  SortingTaskDbRepository [(null)] - saving ticket 1 Andrei 1   0 0 3
+2022-03-16 00:00:12,355 [1] INFO  SortingTaskDbRepository [(null)] - Saved 1 instance
+2022-03-16 00:00:12,356 [1] INFO  SortingTaskDbRepository [(null)] - finding all tickets
+2022-03-16 00:00:12,357 [1] INFO  SortingTaskDbRepository [(null)] - found 1 organisers

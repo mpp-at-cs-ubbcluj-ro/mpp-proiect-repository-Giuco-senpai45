@@ -16,7 +16,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Properties;
 
-public class RepoDBTicket implements Repository<Ticket, Integer>{
+public class RepoDBTicket implements IRepoTicket{
 
     private JdbcUtils dbUtils;
     private static final Logger logger= LogManager.getLogger();
@@ -29,12 +29,11 @@ public class RepoDBTicket implements Repository<Ticket, Integer>{
     public void add(Ticket el) {
         logger.traceEntry("saving ticket {}", el);
         Connection con = dbUtils.getConnection();
-        try(PreparedStatement preparedStatement = con.prepareStatement("insert into Ticket (Id, Mid, Quantity, CustomerName) values (?, ?, ?, ?)")){
+        try(PreparedStatement preparedStatement = con.prepareStatement("insert into Ticket (Mid, Quantity, CustomerName) values (?, ?, ?)")){
 
-            preparedStatement.setInt(1, el.getID());
-            preparedStatement.setInt(2, el.getMatch().getID());
-            preparedStatement.setInt(3,el.getQuantity());
-            preparedStatement.setString(4,el.getCustomerName());
+            preparedStatement.setInt(1, el.getMatch().getID());
+            preparedStatement.setInt(2,el.getQuantity());
+            preparedStatement.setString(3,el.getCustomerName());
             int result = preparedStatement.executeUpdate();
             logger.trace("Saved {} instances", result);
         } catch (SQLException ex) {
@@ -114,7 +113,7 @@ public class RepoDBTicket implements Repository<Ticket, Integer>{
         logger.traceEntry("find all tickets");
         Connection con = dbUtils.getConnection();
         List<Ticket> tickets = new ArrayList<>();
-        try(PreparedStatement preparedStatement = con.prepareStatement("select * from Organiser")){
+        try(PreparedStatement preparedStatement = con.prepareStatement("select * from Ticket")){
             try(ResultSet result = preparedStatement.executeQuery()){
                 while(result.next()){
                     int Id = result.getInt("Id");
@@ -144,7 +143,7 @@ public class RepoDBTicket implements Repository<Ticket, Integer>{
         logger.traceEntry("find all tickets");
         Connection con = dbUtils.getConnection();
         List<Ticket> tickets = new ArrayList<>();
-        try(PreparedStatement preparedStatement = con.prepareStatement("select * from Organiser")){
+        try(PreparedStatement preparedStatement = con.prepareStatement("select * from Ticket")){
             try(ResultSet result = preparedStatement.executeQuery()){
                 while(result.next()){
                     int Id = result.getInt("Id");

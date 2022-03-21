@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MatchesController">
+   <children>
+      <Button fx:id="sellTicketBtn" layoutX="115.0" layoutY="213.0" mnemonicParsing="false" onAction="#sellTicketHandler" prefHeight="40.0" prefWidth="125.0" text="Sell ticket" />
+      <Button fx:id="filterDescendingBtn" layoutX="449.0" layoutY="471.0" mnemonicParsing="false" onAction="#filterMatchesHandler" prefHeight="40.0" prefWidth="223.0" text="Filter descending number of seats" />
+      <TextField fx:id="textCustomerName" layoutX="100.0" layoutY="144.0" prefHeight="33.0" prefWidth="155.0" />
+      <Label layoutX="7.0" layoutY="144.0" prefHeight="33.0" prefWidth="91.0" text="Customer Name" />
+      <TextField fx:id="textQuantity" layoutX="100.0" layoutY="82.0" prefHeight="33.0" prefWidth="155.0" />
+      <TextField fx:id="textMid" layoutX="100.0" layoutY="24.0" prefHeight="33.0" prefWidth="155.0" />
+      <Label layoutX="20.0" layoutY="24.0" prefHeight="33.0" prefWidth="61.0" text="Match ID" />
+      <Label layoutX="20.0" layoutY="82.0" prefHeight="33.0" prefWidth="61.0" text="Quantity" />
+      <ListView fx:id="matchesListView" layoutX="312.0" layoutY="14.0" onMousePressed="#fillFieldsMatch" prefHeight="437.0" prefWidth="497.0" />
+      <Label layoutX="21.0" layoutY="184.0" prefHeight="22.0" prefWidth="281.0" textFill="#ab0909" visible="false" />
+   </children>
+</AnchorPane>

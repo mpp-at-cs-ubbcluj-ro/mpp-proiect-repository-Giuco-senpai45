@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="matchesListView" layoutX="94.0" layoutY="52.0" prefHeight="405.0" prefWidth="628.0">
+         <columns>
+            <TableColumn fx:id="dateColumn" prefWidth="98.0" text="Date" />
+            <TableColumn fx:id="team1Column" prefWidth="99.0" text="Team1" />
+            <TableColumn fx:id="team2Column" prefWidth="85.0" text="Team2" />
+            <TableColumn fx:id="typeColumn" prefWidth="84.0" text="Type" />
+            <TableColumn fx:id="nrseatsColumn" prefWidth="107.0" text="Number of seats" />
+            <TableColumn fx:id="priceColumn" prefWidth="58.0" text="Price" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
