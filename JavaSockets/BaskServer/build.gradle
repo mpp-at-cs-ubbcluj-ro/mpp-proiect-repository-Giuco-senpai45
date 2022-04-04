@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'mpp.javasocks'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project (':BaskModel')
+    implementation project (':BaskServices')
+    implementation project (':BaskRepos')
+    implementation project (':BaskNetworking')
+}
+
+application{
+    mainClass='StartRpcServer'
+//    mainClass='StartObjectServer'
+}
