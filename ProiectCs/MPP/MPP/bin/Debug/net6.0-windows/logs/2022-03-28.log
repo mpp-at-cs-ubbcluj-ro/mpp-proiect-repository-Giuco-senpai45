@@ -1,0 +1,128 @@
+2022-03-28 09:40:48,794 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-28 09:40:48,839 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 09:40:48,841 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 09:40:59,568 [1] INFO  SortingTaskDbRepository [(null)] - finding organiser by name o1
+2022-03-28 09:40:59,932 [1] INFO  SortingTaskDbRepository [(null)] - Found 1 o1 instance
+2022-03-28 09:40:59,941 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-28 09:40:59,954 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-28 09:41:14,090 [1] INFO  SortingTaskDbRepository [(null)] - finding one match 5
+2022-03-28 09:41:14,091 [1] INFO  SortingTaskDbRepository [(null)] - Found 5 E7 E10 100 30.5 instance
+2022-03-28 09:41:14,092 [1] INFO  SortingTaskDbRepository [(null)] - updating quantity for match 5 with 97
+2022-03-28 09:41:14,109 [1] INFO  SortingTaskDbRepository [(null)] - Updated 1 instance
+2022-03-28 09:41:14,111 [1] INFO  SortingTaskDbRepository [(null)] - saving ticket 0 Mihai 5   0 0 3
+2022-03-28 09:41:14,118 [1] INFO  SortingTaskDbRepository [(null)] - Saved 1 instance
+2022-03-28 09:41:14,119 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-28 09:41:14,120 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-28 11:29:06,895 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-28 11:29:06,966 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 11:29:06,967 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 11:37:27,849 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-28 11:37:27,912 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 11:37:27,914 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 11:37:35,812 [1] INFO  SortingTaskDbRepository [(null)] - finding organiser by name o1
+2022-03-28 11:37:36,018 [1] INFO  SortingTaskDbRepository [(null)] - Found 1 o1 instance
+2022-03-28 11:37:36,032 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-28 11:37:36,045 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-28 11:37:47,060 [1] INFO  SortingTaskDbRepository [(null)] - finding one match 7
+2022-03-28 11:37:47,063 [1] INFO  SortingTaskDbRepository [(null)] - Found 7 E9 E12 30 30.5 instance
+2022-03-28 11:37:47,066 [1] INFO  SortingTaskDbRepository [(null)] - updating quantity for match 7 with 26
+2022-03-28 11:37:47,090 [1] INFO  SortingTaskDbRepository [(null)] - Updated 1 instance
+2022-03-28 11:37:47,092 [1] INFO  SortingTaskDbRepository [(null)] - saving ticket 0 Denisa 7   0 0 4
+2022-03-28 11:38:07,751 [1] INFO  SortingTaskDbRepository [(null)] - finding one match 1
+2022-03-28 11:38:07,752 [1] INFO  SortingTaskDbRepository [(null)] - Found 1 Echi1 Echi2 80 10.5 instance
+2022-03-28 11:38:07,753 [1] INFO  SortingTaskDbRepository [(null)] - updating quantity for match 1 with 76
+2022-03-28 11:38:07,762 [1] INFO  SortingTaskDbRepository [(null)] - Updated 1 instance
+2022-03-28 11:38:07,763 [1] INFO  SortingTaskDbRepository [(null)] - saving ticket 0 Deni 1   0 0 4
+2022-03-28 11:38:23,373 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-28 11:38:23,437 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 11:38:23,439 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 11:38:33,338 [1] INFO  SortingTaskDbRepository [(null)] - finding organiser by name o1
+2022-03-28 11:38:33,501 [1] INFO  SortingTaskDbRepository [(null)] - Found 1 o1 instance
+2022-03-28 11:38:33,513 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-28 11:38:33,522 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-28 11:38:39,966 [1] INFO  SortingTaskDbRepository [(null)] - finding one match 5
+2022-03-28 11:38:39,969 [1] INFO  SortingTaskDbRepository [(null)] - Found 5 E7 E10 97 30.5 instance
+2022-03-28 11:38:39,971 [1] INFO  SortingTaskDbRepository [(null)] - updating quantity for match 5 with 93
+2022-03-28 11:38:39,993 [1] INFO  SortingTaskDbRepository [(null)] - Updated 1 instance
+2022-03-28 11:38:39,996 [1] INFO  SortingTaskDbRepository [(null)] - saving ticket 0 andrei2 5   0 0 4
+2022-03-28 11:41:24,035 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-28 11:41:24,111 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 11:41:24,113 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 11:41:31,389 [1] INFO  SortingTaskDbRepository [(null)] - finding organiser by name o1
+2022-03-28 11:41:31,562 [1] INFO  SortingTaskDbRepository [(null)] - Found 1 o1 instance
+2022-03-28 11:41:31,571 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-28 11:41:31,580 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-28 11:41:38,530 [1] INFO  SortingTaskDbRepository [(null)] - finding one match 5
+2022-03-28 11:41:38,532 [1] INFO  SortingTaskDbRepository [(null)] - Found 5 E7 E10 93 30.5 instance
+2022-03-28 11:41:38,534 [1] INFO  SortingTaskDbRepository [(null)] - updating quantity for match 5 with 90
+2022-03-28 11:41:38,542 [1] INFO  SortingTaskDbRepository [(null)] - Updated 1 instance
+2022-03-28 11:41:38,544 [1] INFO  SortingTaskDbRepository [(null)] - saving ticket 0 Mihai 5   0 0 3
+2022-03-28 11:42:55,612 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-28 11:42:55,670 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 11:42:55,671 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 11:43:01,115 [1] INFO  SortingTaskDbRepository [(null)] - finding organiser by name o1
+2022-03-28 11:43:01,280 [1] INFO  SortingTaskDbRepository [(null)] - Found 1 o1 instance
+2022-03-28 11:43:01,289 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-28 11:43:01,298 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-28 11:43:08,648 [1] INFO  SortingTaskDbRepository [(null)] - finding one match 5
+2022-03-28 11:43:08,651 [1] INFO  SortingTaskDbRepository [(null)] - Found 5 E7 E10 90 30.5 instance
+2022-03-28 11:43:08,653 [1] INFO  SortingTaskDbRepository [(null)] - updating quantity for match 5 with 87
+2022-03-28 11:43:08,663 [1] INFO  SortingTaskDbRepository [(null)] - Updated 1 instance
+2022-03-28 11:43:08,666 [1] INFO  SortingTaskDbRepository [(null)] - saving ticket 0 fefe 5   0 0 3
+2022-03-28 11:43:08,673 [1] INFO  SortingTaskDbRepository [(null)] - Saved 1 instance
+2022-03-28 11:43:08,674 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-28 11:43:08,675 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-28 11:44:14,580 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-28 11:44:14,660 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 11:44:14,661 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 11:44:20,104 [1] INFO  SortingTaskDbRepository [(null)] - finding organiser by name o1
+2022-03-28 11:44:20,280 [1] INFO  SortingTaskDbRepository [(null)] - Found 1 o1 instance
+2022-03-28 11:44:20,290 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-28 11:44:20,299 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-28 11:44:27,299 [1] INFO  SortingTaskDbRepository [(null)] - finding one match 2
+2022-03-28 11:44:27,301 [1] INFO  SortingTaskDbRepository [(null)] - Found 2 Echi3 Echi4 120 10.5 instance
+2022-03-28 11:44:27,303 [1] INFO  SortingTaskDbRepository [(null)] - updating quantity for match 2 with 117
+2022-03-28 11:44:27,321 [1] INFO  SortingTaskDbRepository [(null)] - Updated 1 instance
+2022-03-28 11:44:27,323 [1] INFO  SortingTaskDbRepository [(null)] - saving ticket 0 andrei 2   0 0 3
+2022-03-28 11:44:27,341 [1] INFO  SortingTaskDbRepository [(null)] - Saved 1 instance
+2022-03-28 11:44:27,342 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-28 11:44:27,344 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-28 11:44:32,484 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-28 11:44:32,487 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-28 11:47:31,362 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-28 11:47:31,425 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 11:47:31,428 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 11:47:39,004 [1] INFO  SortingTaskDbRepository [(null)] - finding organiser by name o1
+2022-03-28 11:47:39,172 [1] INFO  SortingTaskDbRepository [(null)] - Found 1 o1 instance
+2022-03-28 11:47:39,187 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-28 11:47:39,203 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-28 11:50:55,996 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-28 11:50:56,052 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 11:50:56,054 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 11:51:02,976 [1] INFO  SortingTaskDbRepository [(null)] - finding organiser by name o1
+2022-03-28 11:51:03,117 [1] INFO  SortingTaskDbRepository [(null)] - Found 1 o1 instance
+2022-03-28 11:51:03,127 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-28 11:51:03,138 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-28 11:51:16,204 [1] INFO  SortingTaskDbRepository [(null)] - finding one match 2
+2022-03-28 11:51:16,207 [1] INFO  SortingTaskDbRepository [(null)] - Found 2 Echi3 Echi4 117 10.5 instance
+2022-03-28 11:51:16,210 [1] INFO  SortingTaskDbRepository [(null)] - updating quantity for match 2 with 114
+2022-03-28 11:51:16,220 [1] INFO  SortingTaskDbRepository [(null)] - Updated 1 instance
+2022-03-28 11:51:16,225 [1] INFO  SortingTaskDbRepository [(null)] - saving ticket 0 mihai 2   0 0 3
+2022-03-28 11:51:16,244 [1] INFO  SortingTaskDbRepository [(null)] - Saved 1 instance
+2022-03-28 11:51:16,245 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-28 11:51:16,246 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-28 11:52:14,472 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-28 11:52:14,529 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 11:52:14,531 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-28 11:52:19,774 [1] INFO  SortingTaskDbRepository [(null)] - finding organiser by name o1
+2022-03-28 11:52:19,887 [1] INFO  SortingTaskDbRepository [(null)] - Found 1 o1 instance
+2022-03-28 11:52:19,898 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-28 11:52:19,911 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-28 11:52:27,405 [1] INFO  SortingTaskDbRepository [(null)] - finding one match 2
+2022-03-28 11:52:27,408 [1] INFO  SortingTaskDbRepository [(null)] - Found 2 Echi3 Echi4 114 10.5 instance
+2022-03-28 11:52:27,411 [1] INFO  SortingTaskDbRepository [(null)] - updating quantity for match 2 with 113
+2022-03-28 11:52:27,419 [1] INFO  SortingTaskDbRepository [(null)] - Updated 1 instance
+2022-03-28 11:52:27,422 [1] INFO  SortingTaskDbRepository [(null)] - saving ticket 0 fnndf 2   0 0 1
+2022-03-28 11:52:27,429 [1] INFO  SortingTaskDbRepository [(null)] - Saved 1 instance
+2022-03-28 11:52:27,431 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-28 11:52:27,432 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches

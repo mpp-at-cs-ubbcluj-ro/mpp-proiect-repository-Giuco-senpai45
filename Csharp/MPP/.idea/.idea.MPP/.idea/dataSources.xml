@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="basket" uuid="86747a9a-fb49-4f62-9db6-91201f77f066">
+    <data-source source="LOCAL" name="basket" uuid="ad715fff-38d0-41a2-b4cb-05b5570a4a32">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\MPP\databases\basket.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\persistance2\databases\basket.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>

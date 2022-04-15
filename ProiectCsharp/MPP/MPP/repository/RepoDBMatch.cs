@@ -4,7 +4,7 @@ using MPP.model;
 
 namespace MPP.repository;
 
-public class RepoDBMatch: Repository<Match, int>
+public class RepoDBMatch: IRepoMatch
 {
     private static readonly ILog log = LogManager.GetLogger("SortingTaskDbRepository");
 
@@ -22,7 +22,7 @@ public class RepoDBMatch: Repository<Match, int>
         var con = DBUtils.getConnection(props);
         using (var comm = con.CreateCommand())
         {
-            comm.CommandText = "insert into Match  values (@Id, @Team1, @Team2, @Type, @NrOfSeats, @Price)";
+            comm.CommandText = "insert into Match  values (@Id, @Team1, @Team2, @Type, @NrOfSeats, @Price, @Date)";
             var paramId = comm.CreateParameter();
             paramId.ParameterName = "@Id";
             paramId.Value = entity.Id;
@@ -52,6 +52,11 @@ public class RepoDBMatch: Repository<Match, int>
             paramPrice.ParameterName = "@Price";
             paramPrice.Value = entity.Price;
             comm.Parameters.Add(paramPrice);
+
+            var paramDate = comm.CreateParameter();
+            paramDate.ParameterName = "@Date";
+            paramDate.Value = entity.Date;
+            comm.Parameters.Add(paramDate);
             
             var result = comm.ExecuteNonQuery();
             log.InfoFormat("Saved {0} instance", result);
@@ -92,7 +97,7 @@ public class RepoDBMatch: Repository<Match, int>
         IDbConnection con = DBUtils.getConnection(props);
         using (var comm = con.CreateCommand())
         {
-            comm.CommandText = "update Match set Team1=@Team1,Team2=@Team2,Type=@Type,NrOfSeats=@NrOfSeats where Id=@Id";
+            comm.CommandText = "update Match set Team1=@Team1,Team2=@Team2,Type=@Type,NrOfSeats=@NrOfSeats,Date=@Date where Id=@Id";
             
             var paramId = comm.CreateParameter();
             paramId.ParameterName = "@Id";
@@ -118,7 +123,12 @@ public class RepoDBMatch: Repository<Match, int>
             paramNrOfSeats.ParameterName = "@NrOfSeats";
             paramNrOfSeats.Value = entity.NrOfSeats;
             comm.Parameters.Add(paramNrOfSeats);
-            
+
+            var paramDate = comm.CreateParameter();
+            paramDate.ParameterName = "@Date";
+            paramDate.Value = entity.Date;
+            comm.Parameters.Add(paramDate);
+
             var paramPrice = comm.CreateParameter();
             paramPrice.ParameterName = "@Price";
             paramPrice.Value = entity.Price;
@@ -141,7 +151,7 @@ public class RepoDBMatch: Repository<Match, int>
         Match match = new Match();
         using (var comm = con.CreateCommand())
         {
-            comm.CommandText = "select Id,Team1,Team2,Type,NrOfSeats,Price from Match where Id = @Id";
+            comm.CommandText = "select Id,Team1,Team2,Type,NrOfSeats,Price,Date from Match where Id = @Id";
             var paramId = comm.CreateParameter();
             paramId.ParameterName = "@Id";
             paramId.Value = id;
@@ -156,12 +166,14 @@ public class RepoDBMatch: Repository<Match, int>
                     string type = dataR.GetString(3);
                     int nrs = dataR.GetInt32(4);
                     double price = dataR.GetDouble(5);
+                    DateTime date = dataR.GetDateTime(6);
                     match.Id = idb;
                     match.Team1 = t1;
                     match.Team2 = t2;
                     match.MatchType = type;
                     match.NrOfSeats = nrs;
                     match.Price = price;
+                    match.Date = date;
                 }
             }
         }
@@ -177,6 +189,7 @@ public class RepoDBMatch: Repository<Match, int>
         using (var comm = con.CreateCommand())
         {
             comm.CommandText = "select Id,Team1,Team2,Type,NrOfSeats,Price from Match";
+            comm.CommandText = "select Id,Team1,Team2,Type,NrOfSeats,Price from Match";
             using (var dataR = comm.ExecuteReader())
             {
                 while (dataR.Read())
@@ -187,12 +200,69 @@ public class RepoDBMatch: Repository<Match, int>
                     string type = dataR.GetString(3);
                     int nrs = dataR.GetInt32(4);
                     double price = dataR.GetDouble(5);
-                    Match match = new Match(idb, t1, t2, type, nrs, price);
+                    //DateTime date = dataR.GetDateTime(6);
+                    Match match = new Match(idb, t1, t2, type, nrs, price);//,date);
                     matches.Add(match);
                 }
             }
         }
         log.InfoFormat("found {0} matches",matches.Count);
+        return matches;
+    }
+
+    public void updateNoOfSeats(int noOfSeats, int id)
+    {
+        log.InfoFormat("updating quantity for match {0} with {1}", id, noOfSeats);
+        IDbConnection con = DBUtils.getConnection(props);
+        using (var comm = con.CreateCommand())
+        {
+            comm.CommandText = "update Match set NrOfSeats=@NrOfSeats where Id=@Id";
+
+            var paramId = comm.CreateParameter();
+            paramId.ParameterName = "@Id";
+            paramId.Value = id;
+            comm.Parameters.Add(paramId);
+
+            var paramNrOfSeats = comm.CreateParameter();
+            paramNrOfSeats.ParameterName = "@NrOfSeats";
+            paramNrOfSeats.Value = noOfSeats;
+            comm.Parameters.Add(paramNrOfSeats);
+
+            var dataR = comm.ExecuteNonQuery();
+            log.InfoFormat("Updated {0} instance", dataR);
+            if (dataR == 0)
+            {
+                log.Error("No match  updated!");
+                throw new Exception("No match updated!");
+            }
+        }
+    }
+
+    public ICollection<Match> getAllDescendingNoOfSeats()
+    {
+        log.InfoFormat("finding all matches");
+        IDbConnection con = DBUtils.getConnection(props);
+        IList<Match> matches = new List<Match>();
+        using (var comm = con.CreateCommand())
+        {
+            comm.CommandText = "select Id,Team1,Team2,Type,NrOfSeats,Price,Date from Match order by NrOfSeats desc";
+            using (var dataR = comm.ExecuteReader())
+            {
+                while (dataR.Read())
+                {
+                    int idb = dataR.GetInt32(0);
+                    string t1 = dataR.GetString(1);
+                    string t2 = dataR.GetString(2);
+                    string type = dataR.GetString(3);
+                    int nrs = dataR.GetInt32(4);
+                    double price = dataR.GetDouble(5);
+                    DateTime date = dataR.GetDateTime(6);
+                    Match match = new Match(idb, t1, t2, type, nrs, price,date);
+                    matches.Add(match);
+                }
+            }
+        }
+        log.InfoFormat("found {0} matches", matches.Count);
         return matches;
     }
 }

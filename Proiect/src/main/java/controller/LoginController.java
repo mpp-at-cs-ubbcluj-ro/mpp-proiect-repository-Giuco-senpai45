@@ -32,8 +32,6 @@ public class LoginController {
     @FXML
     private TextField textName;
 
-
-
     private MasterService masterService;
 
     public void registerOrganiserClick(ActionEvent actionEvent) {

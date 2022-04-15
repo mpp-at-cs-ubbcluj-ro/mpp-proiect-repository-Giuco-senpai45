@@ -1,0 +1,119 @@
+﻿namespace MPP
+{
+    partial class Form1
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.textId = new System.Windows.Forms.TextBox();
+            this.textName = new System.Windows.Forms.TextBox();
+            this.loginBtn = new System.Windows.Forms.Button();
+            this.registerBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // textId
+            // 
+            this.textId.Location = new System.Drawing.Point(176, 67);
+            this.textId.Name = "textId";
+            this.textId.Size = new System.Drawing.Size(277, 27);
+            this.textId.TabIndex = 0;
+            // 
+            // textName
+            // 
+            this.textName.Location = new System.Drawing.Point(176, 132);
+            this.textName.Name = "textName";
+            this.textName.Size = new System.Drawing.Size(277, 27);
+            this.textName.TabIndex = 1;
+            // 
+            // loginBtn
+            // 
+            this.loginBtn.Location = new System.Drawing.Point(267, 185);
+            this.loginBtn.Name = "loginBtn";
+            this.loginBtn.Size = new System.Drawing.Size(94, 29);
+            this.loginBtn.TabIndex = 2;
+            this.loginBtn.Text = "Login";
+            this.loginBtn.UseVisualStyleBackColor = true;
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
+            // 
+            // registerBtn
+            // 
+            this.registerBtn.Location = new System.Drawing.Point(267, 247);
+            this.registerBtn.Name = "registerBtn";
+            this.registerBtn.Size = new System.Drawing.Size(94, 29);
+            this.registerBtn.TabIndex = 3;
+            this.registerBtn.Text = "Register";
+            this.registerBtn.UseVisualStyleBackColor = true;
+            this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(100, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(22, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Id";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(100, 135);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 20);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Name";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(611, 302);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.registerBtn);
+            this.Controls.Add(this.loginBtn);
+            this.Controls.Add(this.textName);
+            this.Controls.Add(this.textId);
+            this.Name = "Form1";
+            this.Text = " ";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private TextBox textId;
+        private TextBox textName;
+        private Button loginBtn;
+        private Button registerBtn;
+        private Label label1;
+        private Label label2;
+    }
+}

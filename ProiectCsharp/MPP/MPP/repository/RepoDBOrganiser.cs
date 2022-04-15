@@ -3,7 +3,7 @@ using MPP.model;
 using log4net;
 namespace MPP.repository;
 
-public class RepoDBOrganiser : Repository<Organiser, int>
+public class RepoDBOrganiser : IRepoOrganiser
 {
     
     private static readonly ILog log = LogManager.GetLogger("SortingTaskDbRepository");
@@ -22,7 +22,7 @@ public class RepoDBOrganiser : Repository<Organiser, int>
         var con = DBUtils.getConnection(props);
         using (var comm = con.CreateCommand())
         {
-            comm.CommandText = "insert into Organiser  values (@Id, @Name)";
+            comm.CommandText = "insert into Organiser  values (@Id, @Name,@Password)";
             var paramId = comm.CreateParameter();
             paramId.ParameterName = "@Id";
             paramId.Value = entity.Id;
@@ -32,7 +32,12 @@ public class RepoDBOrganiser : Repository<Organiser, int>
             paramName.ParameterName = "@Name";
             paramName.Value = entity.Name;
             comm.Parameters.Add(paramName);
-            
+
+            var paramPass = comm.CreateParameter();
+            paramPass.ParameterName = "@Password";
+            paramPass.Value = entity.Password;
+            comm.Parameters.Add(paramPass);
+
             var result = comm.ExecuteNonQuery();
             log.InfoFormat("Saved {0} instance", result);
             if (result == 0)
@@ -102,7 +107,7 @@ public class RepoDBOrganiser : Repository<Organiser, int>
         Organiser organiser = new Organiser();
         using (var comm = con.CreateCommand())
         {
-            comm.CommandText = "select Id,Name from Organiser where Id=@Id";
+            comm.CommandText = "select Id,Name,Password from Organiser where Id=@Id";
             var paramId = comm.CreateParameter();
             paramId.ParameterName = "@Id";
             paramId.Value = id;
@@ -113,8 +118,10 @@ public class RepoDBOrganiser : Repository<Organiser, int>
                 {
                     int idb = dataR.GetInt32(0);
                     string name = dataR.GetString(1);
+                    string pass = dataR.GetString(2);
                     organiser.Id = idb;
                     organiser.Name = name;
+                    organiser.Password = pass;
                 }
             }
         }
@@ -129,19 +136,55 @@ public class RepoDBOrganiser : Repository<Organiser, int>
         IList<Organiser> organisers = new List<Organiser>();
         using (var comm = con.CreateCommand())
         {
-            comm.CommandText = "select Id,Name from Organiser";
+            comm.CommandText = "select Id,Name,Password from Organiser";
             using (var dataR = comm.ExecuteReader())
             {
                 while (dataR.Read())
                 {
                     int id = dataR.GetInt32(0);
                     String name = dataR.GetString(1);
-                    Organiser organiser = new Organiser(id, name);
+                    String pass = dataR.GetString(2);
+                    Organiser organiser = new Organiser(id, name,pass);
                     organisers.Add(organiser);
                 }
             }
         }
         log.InfoFormat("found {0} organisers",organisers.Count);
         return organisers;
+    }
+
+    public Organiser findByNameAndPassword(string name, string password)
+    {
+        log.InfoFormat("finding organiser by name {0}", name,password);
+        var con = DBUtils.getConnection(props);
+        Organiser organiser = new Organiser();
+        using (var comm = con.CreateCommand())
+        {
+            comm.CommandText = "select Id,Name,Password from Organiser where Name=@Name and Password=@Password";
+            var paramName = comm.CreateParameter();
+            paramName.ParameterName = "@Name";
+            paramName.Value = name;
+            comm.Parameters.Add(paramName);
+
+            var paramPass = comm.CreateParameter();
+            paramPass.ParameterName = "@Password";
+            paramPass.Value = name;
+            comm.Parameters.Add(paramPass);
+
+            using (var dataR = comm.ExecuteReader())
+            {
+                while (dataR.Read())
+                {
+                    int idb = dataR.GetInt32(0);
+                    string orgName = dataR.GetString(1);
+                    string pass = dataR.GetString(2);
+                    organiser.Id = idb;
+                    organiser.Name = orgName;
+                    organiser.Password = pass;
+                }
+            }
+        }
+        log.InfoFormat("Found {0} instance", organiser);
+        return organiser;
     }
 }

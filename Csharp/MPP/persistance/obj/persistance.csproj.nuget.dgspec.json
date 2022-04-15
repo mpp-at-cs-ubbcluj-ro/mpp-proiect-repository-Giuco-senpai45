@@ -1,0 +1,180 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Proiecte Java\\Proiect MPP\\mpp-proiect-repository-Giuco-senpai45\\Csharp\\MPP\\persistance\\persistance.csproj": {}
+  },
+  "projects": {
+    "D:\\Proiecte Java\\Proiect MPP\\mpp-proiect-repository-Giuco-senpai45\\Csharp\\MPP\\model\\model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Proiecte Java\\Proiect MPP\\mpp-proiect-repository-Giuco-senpai45\\Csharp\\MPP\\model\\model.csproj",
+        "projectName": "model",
+        "projectPath": "D:\\Proiecte Java\\Proiect MPP\\mpp-proiect-repository-Giuco-senpai45\\Csharp\\MPP\\model\\model.csproj",
+        "packagesPath": "C:\\Users\\GIUCO\\.nuget\\packages\\",
+        "outputPath": "D:\\Proiecte Java\\Proiect MPP\\mpp-proiect-repository-Giuco-senpai45\\Csharp\\MPP\\model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\GIUCO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Mono.Data.Sqlite.Portable": {
+              "target": "Package",
+              "version": "[1.0.3.5, )"
+            },
+            "SQLitePCLRaw.core": {
+              "target": "Package",
+              "version": "[2.0.7, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.115.5, )"
+            },
+            "System.Memory": {
+              "target": "Package",
+              "version": "[4.5.4, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Proiecte Java\\Proiect MPP\\mpp-proiect-repository-Giuco-senpai45\\Csharp\\MPP\\persistance\\persistance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Proiecte Java\\Proiect MPP\\mpp-proiect-repository-Giuco-senpai45\\Csharp\\MPP\\persistance\\persistance.csproj",
+        "projectName": "persistance",
+        "projectPath": "D:\\Proiecte Java\\Proiect MPP\\mpp-proiect-repository-Giuco-senpai45\\Csharp\\MPP\\persistance\\persistance.csproj",
+        "packagesPath": "C:\\Users\\GIUCO\\.nuget\\packages\\",
+        "outputPath": "D:\\Proiecte Java\\Proiect MPP\\mpp-proiect-repository-Giuco-senpai45\\Csharp\\MPP\\persistance\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\GIUCO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Proiecte Java\\Proiect MPP\\mpp-proiect-repository-Giuco-senpai45\\Csharp\\MPP\\model\\model.csproj": {
+                "projectPath": "D:\\Proiecte Java\\Proiect MPP\\mpp-proiect-repository-Giuco-senpai45\\Csharp\\MPP\\model\\model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Mono.Data.Sqlite.Portable": {
+              "target": "Package",
+              "version": "[1.0.3.5, )"
+            },
+            "SQLitePCLRaw.core": {
+              "target": "Package",
+              "version": "[2.0.7, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.115.5, )"
+            },
+            "System.Memory": {
+              "target": "Package",
+              "version": "[4.5.4, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.14, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
