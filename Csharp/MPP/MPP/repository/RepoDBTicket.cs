@@ -8,7 +8,8 @@ namespace MPP.repository
 {
     public class RepoDBTicket : IRepoTicket
     {
-        private static readonly ILog log = LogManager.GetLogger("SortingTaskDbRepository");
+        //private static readonly ILog log = LogManager.GetLogger("SortingTaskDbRepository");
+        private static readonly ILog log = LogManager.GetLogger("RepoDBTicket");
 
         IDictionary<string, string> props;
 

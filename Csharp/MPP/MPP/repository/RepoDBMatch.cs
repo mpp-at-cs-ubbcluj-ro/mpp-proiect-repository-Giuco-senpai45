@@ -8,13 +8,14 @@ namespace MPP.repository
 {
     public class RepoDBMatch : IRepoMatch
     {
-        private static readonly ILog log = LogManager.GetLogger("SortingTaskDbRepository");
+        private static readonly ILog log = LogManager.GetLogger("RepoDBMatch");
+        //private static readonly ILog log = LogManager.GetLogger("SortingTaskDbRepository");
 
         IDictionary<string, string> props;
 
         public RepoDBMatch(IDictionary<string, string> props)
         {
-            log.Info("Creating RepoTicketDB");
+            log.Info("Creating RepoMatch");
             this.props = props;
         }
 

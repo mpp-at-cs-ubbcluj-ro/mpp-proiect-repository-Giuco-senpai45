@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using log4net;
 using log4net.Config;
 using MPP.repository;
 using MPP.service;
@@ -16,11 +17,12 @@ namespace MPP
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
+        
         static void Main()
         {
 
-            XmlConfigurator.Configure(new System.IO.FileInfo("log4j.xml"));
-            IDictionary<String, string> props = new SortedList<String, String>();
+            XmlConfigurator.Configure(new System.IO.FileInfo("log4net.config"));
+            IDictionary<string, string> props = new SortedList<string, string>();
             props.Add("ConnectionString", GetConnectionStringByName("basketDB"));
 
             RepoDBOrganiser repoOrganiser = new RepoDBOrganiser(props);

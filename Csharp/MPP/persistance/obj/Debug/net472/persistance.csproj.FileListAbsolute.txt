@@ -1,0 +1,5 @@
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\persistance\obj\Debug\net472\persistance.csproj.AssemblyReference.cache
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\persistance\obj\Debug\net472\persistance.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\persistance\obj\Debug\net472\persistance.AssemblyInfoInputs.cache
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\persistance\obj\Debug\net472\persistance.AssemblyInfo.cs
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\persistance\obj\Debug\net472\persistance.csproj.CoreCompileInputs.cache

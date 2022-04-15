@@ -1,0 +1,26 @@
+2022-03-30 13:17:22,118 [1] INFO RepoDBOrganiser - Creating RepoOrganiserDB
+2022-03-30 13:17:22,125 [1] INFO RepoDBMatch - Creating RepoMatch
+2022-03-30 13:17:22,125 [1] INFO RepoDBTicket - Creating RepoTicketDB
+2022-03-30 13:17:41,227 [1] INFO RepoDBOrganiser - finding organiser by name o1
+2022-03-30 13:17:41,347 [1] INFO RepoDBOrganiser - Found 1 o1 instance
+2022-03-30 13:17:41,350 [1] INFO RepoDBMatch - finding all matches
+2022-03-30 13:17:41,351 [1] INFO RepoDBMatch - found 7 matches
+2022-04-04 11:36:18,620 [1] INFO RepoDBOrganiser - Creating RepoOrganiserDB
+2022-04-04 11:36:18,626 [1] INFO RepoDBMatch - Creating RepoMatch
+2022-04-04 11:36:18,626 [1] INFO RepoDBTicket - Creating RepoTicketDB
+2022-04-04 11:36:23,224 [1] INFO RepoDBOrganiser - finding organiser by name o1
+2022-04-04 11:36:23,372 [1] INFO RepoDBOrganiser - Found 0  instance
+2022-04-04 11:36:30,464 [1] INFO RepoDBOrganiser - finding organiser by name o1
+2022-04-04 11:36:30,467 [1] INFO RepoDBOrganiser - Found 1 o1 instance
+2022-04-04 11:36:30,471 [1] INFO RepoDBMatch - finding all matches
+2022-04-04 11:36:30,472 [1] INFO RepoDBMatch - found 7 matches
+2022-04-04 12:15:32,453 [1] INFO RepoDBOrganiser - Creating RepoOrganiserDB
+2022-04-04 12:15:32,470 [1] INFO RepoDBMatch - Creating RepoMatch
+2022-04-04 12:15:32,470 [1] INFO RepoDBTicket - Creating RepoTicketDB
+2022-04-04 12:17:50,577 [1] INFO RepoDBOrganiser - finding organiser by name o1
+2022-04-04 12:17:51,517 [1] INFO RepoDBOrganiser - Found 1 o1 instance
+2022-04-04 12:17:51,527 [1] INFO RepoDBMatch - finding all matches
+2022-04-04 12:17:51,531 [1] INFO RepoDBMatch - found 7 matches
+2022-04-09 17:10:42,595 [1] INFO RepoDBOrganiser - Creating RepoOrganiserDB
+2022-04-09 17:10:42,601 [1] INFO RepoDBMatch - Creating RepoMatch
+2022-04-09 17:10:42,601 [1] INFO RepoDBTicket - Creating RepoTicketDB
