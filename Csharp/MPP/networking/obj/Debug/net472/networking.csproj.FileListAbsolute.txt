@@ -1,0 +1,5 @@
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\networking\obj\Debug\net472\networking.csproj.AssemblyReference.cache
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\networking\obj\Debug\net472\networking.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\networking\obj\Debug\net472\networking.AssemblyInfoInputs.cache
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\networking\obj\Debug\net472\networking.AssemblyInfo.cs
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\networking\obj\Debug\net472\networking.csproj.CoreCompileInputs.cache

@@ -9,7 +9,9 @@ namespace MPP.repository
     public class RepoDBOrganiser : IRepoOrganiser
     {
 
-        private static readonly ILog log = LogManager.GetLogger("SortingTaskDbRepository");
+        //private static readonly ILog log = LogManager.GetLogger("SortingTaskDbRepository");
+        private static readonly ILog log = LogManager.GetLogger("RepoDBOrganiser");
+
 
         IDictionary<String, string> props;
 

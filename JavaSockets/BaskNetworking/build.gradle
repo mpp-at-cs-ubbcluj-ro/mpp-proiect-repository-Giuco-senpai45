@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group 'mpp.javasocks'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project (':BaskModel')
+    implementation project (':BaskServices')
+}

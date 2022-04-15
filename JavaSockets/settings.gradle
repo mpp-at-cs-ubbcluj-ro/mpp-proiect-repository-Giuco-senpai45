@@ -1,0 +1,8 @@
+rootProject.name = 'JavaSockets'
+include 'BaskModel'
+include 'BaskRepos'
+include 'BaskServices'
+include 'BaskServer'
+include 'BaskNetworking'
+include 'BaskClient'
+

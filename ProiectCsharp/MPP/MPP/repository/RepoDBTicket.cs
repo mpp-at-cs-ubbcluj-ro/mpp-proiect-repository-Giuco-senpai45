@@ -3,7 +3,7 @@ using MPP.model;
 using log4net;
 namespace MPP.repository;
 
-public class RepoDBTicket : Repository<Ticket, int>
+public class RepoDBTicket : IRepoTicket
 {
     private static readonly ILog log = LogManager.GetLogger("SortingTaskDbRepository");
 
