@@ -1,0 +1,134 @@
+2022-03-26 00:10:11,604 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 00:10:11,637 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 00:10:11,638 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 00:10:13,523 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 00:10:13,629 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 00:11:30,901 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 00:11:30,941 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 00:11:30,943 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 00:11:32,484 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 00:11:32,678 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 00:21:21,815 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 00:21:21,844 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 00:21:21,845 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 00:21:22,806 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 00:21:22,920 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 01:24:30,622 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 01:24:30,654 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:24:30,655 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:24:32,063 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 01:24:32,162 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 01:26:23,004 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 01:26:23,043 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:26:23,044 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:26:23,946 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 01:26:24,083 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 01:27:08,362 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 01:27:08,398 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:27:08,399 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:27:09,764 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 01:27:09,850 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 01:27:16,890 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 01:27:16,920 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:27:16,921 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:27:18,368 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 01:27:18,473 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 01:36:36,626 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 01:36:36,656 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:36:36,656 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:36:37,471 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 01:36:37,608 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 01:37:09,503 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 01:37:09,538 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:37:09,538 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:37:10,840 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 01:37:10,918 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 01:38:22,650 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 01:38:22,683 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:38:22,684 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:38:24,181 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 01:38:24,266 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 01:38:58,422 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 01:38:58,456 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:38:58,457 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:38:59,472 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 01:38:59,596 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 01:46:37,438 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 01:46:37,474 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:46:37,475 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:46:38,422 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 01:46:38,513 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 01:46:57,841 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 01:46:57,868 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:46:57,869 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:46:59,974 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 01:47:00,065 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 01:47:23,183 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 01:47:23,210 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:47:23,211 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:47:23,944 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 01:47:24,078 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 01:51:05,466 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 01:51:05,494 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:51:05,495 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:51:06,529 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 01:51:06,602 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 01:51:19,218 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 01:51:19,248 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:51:19,249 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 01:51:20,290 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 01:51:20,410 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 11:30:14,200 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 11:30:14,231 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 11:30:14,232 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 11:30:20,878 [1] INFO  SortingTaskDbRepository [(null)] - finding organiser by name o1
+2022-03-26 11:30:22,223 [1] INFO  SortingTaskDbRepository [(null)] - Found 0  instance
+2022-03-26 11:30:22,232 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 11:30:22,240 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 11:30:25,661 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 11:30:25,662 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 11:31:03,987 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 11:31:04,016 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 11:31:04,018 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 11:31:07,172 [1] INFO  SortingTaskDbRepository [(null)] - finding organiser by name sdsaf
+2022-03-26 11:31:07,328 [1] INFO  SortingTaskDbRepository [(null)] - Found 0  instance
+2022-03-26 11:31:07,333 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 11:31:07,342 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 11:31:09,813 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 11:31:09,814 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 11:32:06,647 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 11:32:06,689 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 11:32:06,690 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 11:32:10,590 [1] INFO  SortingTaskDbRepository [(null)] - finding organiser by name crrrr
+2022-03-26 11:32:10,666 [1] INFO  SortingTaskDbRepository [(null)] - Found 0  instance
+2022-03-26 11:32:10,670 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 11:32:10,676 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 11:32:22,334 [1] INFO  SortingTaskDbRepository [(null)] - finding organiser by name o1
+2022-03-26 11:32:22,335 [1] INFO  SortingTaskDbRepository [(null)] - Found 0  instance
+2022-03-26 11:32:22,336 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 11:32:22,337 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches
+2022-03-26 11:36:42,463 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 11:36:42,495 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 11:36:42,495 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 11:37:03,473 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 11:37:03,499 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 11:37:03,500 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 11:37:11,183 [1] INFO  SortingTaskDbRepository [(null)] - finding organiser by name o1
+2022-03-26 11:37:11,266 [1] INFO  SortingTaskDbRepository [(null)] - Found 1 o1 instance
+2022-03-26 11:37:28,573 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 11:37:28,600 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 11:37:28,601 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 11:37:33,393 [1] INFO  SortingTaskDbRepository [(null)] - finding organiser by name asd
+2022-03-26 11:37:33,470 [1] INFO  SortingTaskDbRepository [(null)] - Found 0  instance
+2022-03-26 11:38:31,061 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 11:38:31,089 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 11:38:31,090 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 11:38:34,980 [1] INFO  SortingTaskDbRepository [(null)] - finding organiser by name fdfs
+2022-03-26 11:38:35,059 [1] INFO  SortingTaskDbRepository [(null)] - Found 0  instance
+2022-03-26 11:38:40,702 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoOrganiserDB
+2022-03-26 11:38:40,732 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 11:38:40,733 [1] INFO  SortingTaskDbRepository [(null)] - Creating RepoTicketDB
+2022-03-26 11:38:46,282 [1] INFO  SortingTaskDbRepository [(null)] - finding organiser by name o1
+2022-03-26 11:38:46,354 [1] INFO  SortingTaskDbRepository [(null)] - Found 1 o1 instance
+2022-03-26 11:38:46,359 [1] INFO  SortingTaskDbRepository [(null)] - finding all matches
+2022-03-26 11:38:46,363 [1] INFO  SortingTaskDbRepository [(null)] - found 7 matches

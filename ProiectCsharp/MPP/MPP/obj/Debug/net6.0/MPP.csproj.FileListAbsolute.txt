@@ -49,3 +49,7 @@ D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp
 D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\bin\Debug\net6.0\runtimes\linux-s390x\native\libe_sqlite3.so
 D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\bin\Debug\net6.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
 D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\bin\Debug\net6.0\System.Runtime.CompilerServices.Unsafe.dll
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\obj\Debug\net6.0\MPP.Form1.resources
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\obj\Debug\net6.0\MPP.MainForm.resources
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\obj\Debug\net6.0\MPP.RegisterForm.resources
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\ProiectCsharp\MPP\MPP\obj\Debug\net6.0\MPP.csproj.GenerateResource.cache
