@@ -2,7 +2,6 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="BaskRESTServices" target="16" />
       <module name="JavaSockets.BaskRESTServices" target="16" />
     </bytecodeTargetLevel>
   </component>
