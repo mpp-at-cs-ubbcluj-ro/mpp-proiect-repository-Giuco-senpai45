@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using networking2;
 using persistance2;
 using services2;
+using protobuf;
 
 namespace Server2
 {
@@ -29,7 +30,7 @@ namespace Server2
             MasterService masterService = new MasterService(matchService, organiserService, ticketService);
 
             BasketServiceImpl serviceImpl = new BasketServiceImpl(masterService);
-            SerialChatServer server = new SerialChatServer("127.0.0.1", 55556, serviceImpl);
+            ProtoBaskServer server = new ProtoBaskServer("127.0.0.1", 55556, serviceImpl);
             server.Start();
             Console.WriteLine("Server started ...");
             Console.ReadLine();
@@ -65,6 +66,23 @@ namespace Server2
         protected override Thread createWorker(TcpClient client)
         {
             worker = new ClientObjWorker(server,client);
+            return new Thread(new ThreadStart(worker.run));
+        }
+    }
+
+    public class ProtoBaskServer : ConcurrentServer
+    {
+        private IBasketService server;
+        private ProtoBaskWorker worker;
+        public ProtoBaskServer(string host, int port, IBasketService server)
+            : base(host, port)
+        {
+            this.server = server;
+            Console.WriteLine("ProtoBaskServer...");
+        }
+        protected override Thread createWorker(TcpClient client)
+        {
+            worker = new ProtoBaskWorker(server, client);
             return new Thread(new ThreadStart(worker.run));
         }
     }

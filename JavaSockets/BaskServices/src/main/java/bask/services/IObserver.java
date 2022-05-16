@@ -8,7 +8,6 @@ import java.util.List;
 
 public interface IObserver {
     void listUpdated(List<Match> matches) throws  BasketException;
-    void ticketSold(Ticket ticket) throws BasketException;
     void organiserLoggedIn(Organiser organiser) throws BasketException;
     void organiserLoggedOut(Organiser organiser) throws BasketException;
 }

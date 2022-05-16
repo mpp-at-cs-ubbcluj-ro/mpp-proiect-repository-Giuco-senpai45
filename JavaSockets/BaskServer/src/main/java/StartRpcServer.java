@@ -2,7 +2,6 @@ import java.io.IOException;
 import java.util.Properties;
 
 import bask.network.utils.AbstractServer;
-import bask.network.utils.BasketObjectConcurrentServer;
 import bask.network.utils.BasketRpcConcurrentServer;
 import bask.network.utils.ServerException;
 import bask.repos.RepoDBMatch;

@@ -5,4 +5,7 @@ include 'BaskServices'
 include 'BaskServer'
 include 'BaskNetworking'
 include 'BaskClient'
+include 'BaskRESTServices'
+include 'BaskRESTServices'
+findProject(':BaskRESTServices')?.name = 'BaskRestServices'
 

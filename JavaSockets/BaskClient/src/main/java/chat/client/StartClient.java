@@ -3,7 +3,7 @@ package chat.client;
 import java.io.IOException;
 import java.util.Properties;
 
-import bask.network.objectprotocol.BasketServicesObjectProxy;
+import bask.network.protobuffprotocol.ProtoBaskProxy;
 import bask.network.rpcprotocol.BaskServicesRpcProxy;
 import bask.services.IServices;
 import chat.client.controllers.LoginController;
@@ -45,7 +45,7 @@ public class StartClient extends Application {
         System.out.println("Using server IP " + serverIP);
         System.out.println("Using server port " + serverPort);
 
-        IServices server = new BaskServicesRpcProxy(serverIP, serverPort);
+        IServices server = new ProtoBaskProxy(serverIP, serverPort);
 
         FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("login-view.fxml"));
         Parent root=loader.load();

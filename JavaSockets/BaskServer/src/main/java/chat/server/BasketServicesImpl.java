@@ -28,17 +28,17 @@ public class BasketServicesImpl implements IServices {
     public synchronized void login(Organiser user, IObserver client) throws BasketException {
         Organiser orgR = masterService.getOrganiserService().findOrganiserByLogin(user.getName(), user.getPassword());
 
-        System.out.println("This is the logged user " + orgR.getID() + " " + orgR.getName() + " " + orgR.getPassword());
+        System.out.println("This is the logged user " + orgR.getId() + " " + orgR.getName() + " " + orgR.getPassword());
         if(orgR != null){
             if(loggedOrganisers.isEmpty()) {
-                loggedOrganisers.put(orgR.getID(), client);
+                loggedOrganisers.put(orgR.getId(), client);
                 System.out.println("No one is logged");
             }
             else {
-                if(loggedOrganisers.get(orgR.getID())!=null){
+                if(loggedOrganisers.get(orgR.getId())!=null){
                     throw new BasketException("Organiser already logged in");
                 }
-                loggedOrganisers.put(orgR.getID(), client);
+                loggedOrganisers.put(orgR.getId(), client);
                 notifyOrganisersLoggedIn(orgR);
             }
         }
@@ -54,25 +54,21 @@ public class BasketServicesImpl implements IServices {
     }
 
     @Override
-    public synchronized void ticketSold(Ticket ticket) throws BasketException {
-        masterService.sellTicketForMatch(ticket.getMatch().getID(),ticket.getQuantity(),ticket.getCustomerName());
-    }
-
-    @Override
     public synchronized void logout(Organiser user, IObserver client) throws BasketException {
         Organiser orgN = masterService.getOrganiserService().findOrganiserByLogin(user.getName(), user.getPassword());
 
-        IObserver localClient = loggedOrganisers.remove(orgN.getID());
+        IObserver localClient = loggedOrganisers.remove(orgN.getId());
         if (localClient==null)
-            throw new BasketException("User "+orgN.getID()+" is not logged in.");
+            throw new BasketException("User "+orgN.getId()+" is not logged in.");
         notifyOrganisersLoggedOut(orgN);
     }
 
     @Override
-    public synchronized void sendUpdatedList(List<Match> matches) throws BasketException {
+    public synchronized void sendUpdatedList(Ticket ticket) throws BasketException {
         if(loggedOrganisers.isEmpty()){
             throw new BasketException("There are no other organisers logged in");
         }
+        masterService.sellTicketForMatch(ticket.getMatch().getId(),ticket.getQuantity(),ticket.getCustomerName());
         Iterable<Match> rm = masterService.getMatchService().getAllMatches();
         List<Match> repoMatches = new ArrayList<Match>();
         rm.forEach(repoMatches::add);
@@ -112,11 +108,11 @@ public class BasketServicesImpl implements IServices {
 
         ExecutorService executor= Executors.newFixedThreadPool(defaultThreadsNo);
         for(Organiser us :organisers){
-            IObserver basketClient = loggedOrganisers.get(us.getID());
+            IObserver basketClient = loggedOrganisers.get(us.getId());
             if (basketClient!=null)
                 executor.execute(() -> {
                     try {
-                        System.out.println("Notifying [" + us.getID()+ "] organiser ["+user.getID()+"] logged in.");
+                        System.out.println("Notifying [" + us.getId()+ "] organiser ["+user.getId()+"] logged in.");
                         basketClient.organiserLoggedIn(user);
                     } catch (BasketException e) {
                         System.err.println("Error notifying organisers " + e);
@@ -131,11 +127,11 @@ public class BasketServicesImpl implements IServices {
 
         ExecutorService executor= Executors.newFixedThreadPool(defaultThreadsNo);
         for(Organiser us :organisers){
-            IObserver basketClient = loggedOrganisers.get(us.getID());
+            IObserver basketClient = loggedOrganisers.get(us.getId());
             if (basketClient!=null)
                 executor.execute(() -> {
                     try {
-                        System.out.println("Notifying ["+us.getID()+"] friend ["+user.getID()+"] logged out.");
+                        System.out.println("Notifying ["+us.getId()+"] friend ["+user.getId()+"] logged out.");
                         basketClient.organiserLoggedOut(user);
                     } catch (BasketException e) {
                         System.out.println("Error notifying friend " + e);

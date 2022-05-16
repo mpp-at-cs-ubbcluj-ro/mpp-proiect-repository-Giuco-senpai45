@@ -78,17 +78,6 @@ public class BaskClientRpcReflectionWorker implements Runnable, IObserver {
     }
 
     @Override
-    public void ticketSold(Ticket ticket) throws BasketException {
-        Response resp=new Response.Builder().type(ResponseType.SOLD_TICKET).data(ticket).build();
-        System.out.println("Ticket sold"+ticket);
-        try {
-            sendResponse(resp);
-        } catch (IOException e) {
-            throw new BasketException("Sending error: "+e);
-        }
-    }
-
-    @Override
     public void organiserLoggedIn(Organiser organiser) throws BasketException {
         Response resp=new Response.Builder().type(ResponseType.ORG_LOGGED_IN).data(organiser).build();
         System.out.println("Organiser logged in "+organiser);
@@ -157,28 +146,15 @@ public class BaskClientRpcReflectionWorker implements Runnable, IObserver {
     }
 
     private Response handleUPDATE_MATCHES(Request request){
-            System.out.println("Update matches list request ...");
-            List<Match> matches=(List<Match>)request.data();  //TODO not sure
-            try {
-                server.sendUpdatedList(matches);
-                return okResponse;
-            } catch (BasketException e) {
-                return new Response.Builder().type(ResponseType.ERROR).data(e.getMessage()).build();
-            }
-    }
-
-    private Response handleSELL_TICKET(Request request){
-        System.out.println("Selling ticket request ..."+request.type());
-        Ticket ticket=(Ticket) request.data();
+        System.out.println("Update matches list request ...");
+        Ticket ticket=(Ticket)request.data();  //TODO not sure
         try {
-            server.ticketSold(ticket);
+            server.sendUpdatedList(ticket);
             return okResponse;
         } catch (BasketException e) {
-            connected=false;
             return new Response.Builder().type(ResponseType.ERROR).data(e.getMessage()).build();
         }
     }
-
 
     private Response handleGET_MATCHES(Request request){
         System.out.println("GetLoggedFriends Request ...");

@@ -43,6 +43,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Google.Protobuf, Version=3.20.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.20.0\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
     <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
       <HintPath>..\packages\NLog.4.7.15\lib\net45\NLog.dll</HintPath>
     </Reference>
@@ -60,6 +63,9 @@
       <HintPath>..\packages\System.Data.SQLite.Linq.1.0.115.5\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Transactions" />
@@ -99,6 +105,10 @@
     <ProjectReference Include="..\persistance2\persistance2.csproj">
       <Project>{13074f98-c8c4-4f14-834a-1fd01139b6b5}</Project>
       <Name>persistance2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\protobuff\protobuff.csproj">
+      <Project>{c5b96b2a-49ea-42ad-a581-dad5d9b9095a}</Project>
+      <Name>protobuff</Name>
     </ProjectReference>
     <ProjectReference Include="..\services2\services2.csproj">
       <Project>{1b2a0c24-b215-4657-a87d-5f9152c461d4}</Project>

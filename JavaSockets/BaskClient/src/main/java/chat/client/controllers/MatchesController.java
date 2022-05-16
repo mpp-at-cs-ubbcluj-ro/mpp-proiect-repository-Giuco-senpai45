@@ -102,12 +102,8 @@ public class MatchesController implements Initializable, IObserver {
 
     @Override
     public void listUpdated(List<Match> matches) throws BasketException {
+        System.out.println("AJUNG TRE SA FAC UPDATE");
         Platform.runLater(()-> matchesListView.setItems(FXCollections.observableArrayList(matches)) );
-    }
-
-    @Override
-    public void ticketSold(Ticket ticket) throws BasketException {
-
     }
 
     @Override
@@ -147,11 +143,10 @@ public class MatchesController implements Initializable, IObserver {
             Integer mid = Integer.parseInt(textMid.getText());
             Match match = new Match(mid);
             Ticket ticket = new Ticket(quantity,match,customerName);
-            server.ticketSold(ticket);
-
-            List<Match> matches = server.getMatchesList();
-            matchesListView.setItems(FXCollections.observableArrayList(matches));
-            server.sendUpdatedList(matches);
+            server.sendUpdatedList(ticket);
+            System.out.println("SOLD TICKET SENT");
+//            List<Match> matches = server.getMatchesList();
+//            matchesListView.setItems(FXCollections.observableArrayList(matches));
         }
         catch(BasketException e){
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -167,6 +162,7 @@ public class MatchesController implements Initializable, IObserver {
 
     public void fillFieldsMatch(MouseEvent mouseEvent) {
         Match match = matchesListView.getSelectionModel().getSelectedItem();
-        textMid.setText(match.getID().toString());
+        System.out.println(match);
+        textMid.setText(match.getId().toString());
     }
 }

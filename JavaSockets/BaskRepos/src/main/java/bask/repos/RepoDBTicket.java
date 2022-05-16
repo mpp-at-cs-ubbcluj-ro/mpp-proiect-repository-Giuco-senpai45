@@ -2,7 +2,6 @@ package bask.repos;
 
 import bask.model.JdbcUtils;
 import bask.model.Match;
-import bask.model.Organiser;
 import bask.model.Ticket;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -31,7 +30,7 @@ public class RepoDBTicket implements IRepoTicket{
         Connection con = dbUtils.getConnection();
         try(PreparedStatement preparedStatement = con.prepareStatement("insert into Ticket (Mid, Quantity, CustomerName) values (?, ?, ?)")){
 
-            preparedStatement.setInt(1, el.getMatch().getID());
+            preparedStatement.setInt(1, el.getMatch().getId());
             preparedStatement.setInt(2,el.getQuantity());
             preparedStatement.setString(3,el.getCustomerName());
             int result = preparedStatement.executeUpdate();
@@ -49,7 +48,7 @@ public class RepoDBTicket implements IRepoTicket{
         Connection con = dbUtils.getConnection();
         try(PreparedStatement preparedStatement = con.prepareStatement("delete from Ticket where Id = ?")){
 
-            preparedStatement.setInt(1, el.getID());
+            preparedStatement.setInt(1, el.getId());
             int result = preparedStatement.executeUpdate();
             logger.trace("Removed {} instances", result);
         } catch (SQLException ex) {
@@ -65,10 +64,10 @@ public class RepoDBTicket implements IRepoTicket{
         Connection con = dbUtils.getConnection();
         try(PreparedStatement preparedStatement = con.prepareStatement("Update Ticket set Mid = ?, Quantity = ?, CustomerName = ? where Id = ?")){
 
-            preparedStatement.setInt(1, el.getMatch().getID());
+            preparedStatement.setInt(1, el.getMatch().getId());
             preparedStatement.setInt(2, el.getQuantity());
             preparedStatement.setString(3, el.getCustomerName());
-            preparedStatement.setInt(4, el.getID());
+            preparedStatement.setInt(4, el.getId());
             int result = preparedStatement.executeUpdate();
             logger.trace("Updated {} instances", result);
         } catch (SQLException ex) {

@@ -1,14 +1,22 @@
 package bask.model;
 
-import java.io.Serializable;
+import org.hibernate.annotations.GenericGenerator;
 
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Table;
+
+
+//@Entity
+//@Table( name = "Organiser")
 public class Organiser implements Identifiable<Integer>, Serializable {
-    private Integer Id;
+    private Integer id;
     private String name;
     private String password;
 
     public Organiser(Integer id, String name) {
-        Id = id;
+        this.id = id;
         this.name = name;
     }
 
@@ -21,7 +29,7 @@ public class Organiser implements Identifiable<Integer>, Serializable {
     }
 
     public Organiser(Integer id){
-        this.Id = id;
+        this.id = id;
     }
 
     public Organiser(String name) {
@@ -29,19 +37,22 @@ public class Organiser implements Identifiable<Integer>, Serializable {
     }
 
     public Organiser(int id, String name, String password) {
-        this.Id = id;
+        this.id = id;
         this.name = name;
         this.password = password;
     }
 
     @Override
-    public Integer getID() {
-        return Id;
+//    @javax.persistence.Id
+//    @GeneratedValue(generator="increment")
+//    @GenericGenerator(name="increment", strategy = "increment")
+    public Integer getId() {
+        return id;
     }
 
     @Override
     public void setId(Integer id) {
-        this.Id = id;
+        this.id = id;
     }
 
     public String getName() {
@@ -62,6 +73,6 @@ public class Organiser implements Identifiable<Integer>, Serializable {
 
     @Override
     public String toString() {
-        return Id + " " + name + " " + password;
+        return id + " " + name + " " + password;
     }
 }

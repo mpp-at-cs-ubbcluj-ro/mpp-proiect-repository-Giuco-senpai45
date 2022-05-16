@@ -46,7 +46,7 @@ public class RepoDBOrganiser implements IRepoOrganiser {
         Connection con = dbUtils.getConnection();
         try(PreparedStatement preparedStatement = con.prepareStatement("delete from Organiser where Id = ?")){
 
-            preparedStatement.setInt(1, el.getID());
+            preparedStatement.setInt(1, el.getId());
             int result = preparedStatement.executeUpdate();
             logger.trace("Removed {} instances", result);
         } catch (SQLException ex) {
@@ -60,11 +60,11 @@ public class RepoDBOrganiser implements IRepoOrganiser {
     public void update(Organiser el, Integer id) {
         logger.traceEntry("updating organiser {}", el);
         Connection con = dbUtils.getConnection();
-        try(PreparedStatement preparedStatement = con.prepareStatement("Update Organiser set Name = ?, Passwords = ? where Id = ?")){
+        try(PreparedStatement preparedStatement = con.prepareStatement("Update Organiser set Name = ?, Password = ? where Id = ?")){
 
             preparedStatement.setString(1, el.getName());
             preparedStatement.setString(2, el.getPassword());
-            preparedStatement.setInt(3, el.getID());
+            preparedStatement.setInt(3, el.getId());
             int result = preparedStatement.executeUpdate();
             logger.trace("Updated {} instances", result);
         } catch (SQLException ex) {

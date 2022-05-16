@@ -41,3 +41,11 @@ D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\Se
 D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\Server2\bin\Debug\System.Data.SQLite.xml
 D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\Server2\bin\Debug\x64\SQLite.Interop.dll
 D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\Server2\bin\Debug\x86\SQLite.Interop.dll
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\Server2\bin\Debug\Google.Protobuf.dll
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\Server2\bin\Debug\protobuff.dll
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\Server2\bin\Debug\protobuff.pdb
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\Server2\bin\Debug\Google.Protobuf.pdb
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\Server2\bin\Debug\Google.Protobuf.xml
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\Server2\bin\Debug\protobuff.dll.config
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\Server2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\Csharp\MPP\Server2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

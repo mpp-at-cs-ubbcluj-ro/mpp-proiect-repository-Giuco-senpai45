@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="basket" uuid="243ce020-f8f4-439e-8233-3dd412077ae8">
-      <driver-ref>sqlite.xerial</driver-ref>
+    <data-source source="LOCAL" name="basket_normal" uuid="243ce020-f8f4-439e-8233-3dd412077ae8">
+      <driver-ref>cbba611e-f52d-48a3-a138-d13db775d8d0</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\databases\basket.db</jdbc-url>
@@ -12,6 +12,13 @@
           <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.34.0/sqlite-jdbc-3.34.0.jar</url>
         </library>
       </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="basket_hibernate" uuid="7d5390b2-537c-470c-b7e2-63f3e66e31d5">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\Proiecte Java\Proiect MPP\mpp-proiect-repository-Giuco-senpai45\JavaSockets\BaskServer\basket.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
 </project>

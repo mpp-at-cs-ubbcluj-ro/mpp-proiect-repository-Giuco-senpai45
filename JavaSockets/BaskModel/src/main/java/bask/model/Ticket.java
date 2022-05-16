@@ -54,7 +54,7 @@ public class Ticket implements Identifiable<Integer>, Serializable {
     }
 
     @Override
-    public Integer getID() {
+    public Integer getId() {
         return ID;
     }
 

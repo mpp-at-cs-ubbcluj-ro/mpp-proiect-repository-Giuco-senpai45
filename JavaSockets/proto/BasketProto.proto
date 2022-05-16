@@ -1,0 +1,55 @@
+syntax="proto3";
+package proto;
+
+import "google/protobuf/timestamp.proto";
+
+option java_package = "bask.network.protobuffprotocol";
+option java_outer_classname = "BasketProtobufs";
+
+message Organiser{
+  int32 id = 1;
+  string name = 2;
+  string passwd = 3;
+}
+
+message Match{
+  int32 id = 1;
+  string team1 = 2;
+  string team2 = 3;
+  string type = 4;
+  double price = 5;
+  int32 nrOfSeats = 6;
+  google.protobuf.Timestamp date = 7;
+}
+
+message Ticket {
+  int32 id = 1;
+  Match match = 2;
+  int32 quantity = 3;
+  string customerName =4;
+}
+
+message BasketRequest {
+  enum Type {Unkown=0; Login = 1; Logout = 2; UpdateMatches = 3; GetMatches=4 ;}
+
+  // Identifies which request is filled in.
+  Type type = 1;
+
+  // One of the following will be filled in, depending on the type.
+  oneof payload{
+    Organiser user = 2;
+    Ticket ticket = 3;
+  }
+}
+
+message BasketResponse{
+  enum Type { Unknown=0; Ok = 1; Error = 2; GotMatches=3; NewMatchList = 4; OrgLoggedIn=5; OrgLoggedOut=6;  }
+
+  // Identifies which request is filled in.
+  Type type = 1;
+
+  // One of the following will be filled in, depending on the type.
+  optional string error = 2;
+  repeated Match matches=3;
+  optional Organiser user=4 ;
+}

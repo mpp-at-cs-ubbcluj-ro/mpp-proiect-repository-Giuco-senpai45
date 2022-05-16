@@ -15,9 +15,10 @@ dependencies {
     implementation project (':BaskServices')
     implementation project (':BaskRepos')
     implementation project (':BaskNetworking')
+    implementation 'com.google.protobuf:protobuf-java:3.19.1'
 }
 
 application{
-    mainClass='StartRpcServer'
+    mainClass='StartProtobuffServer'
 //    mainClass='StartObjectServer'
 }
