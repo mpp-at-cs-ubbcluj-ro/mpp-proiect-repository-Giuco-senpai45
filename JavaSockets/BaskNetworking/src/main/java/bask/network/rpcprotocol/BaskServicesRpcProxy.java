@@ -116,7 +116,7 @@ public class BaskServicesRpcProxy implements IServices {
 
     private boolean isUpdate(Response response){
         return response.type()== ResponseType.ORG_LOGGED_OUT || response.type()== ResponseType.ORG_LOGGED_IN ||
-                response.type()== ResponseType.NEW_MATCH_LIST || response.type()== ResponseType.SOLD_TICKET;
+                response.type()== ResponseType.NEW_MATCH_LIST;
     }
 
     @Override
@@ -142,17 +142,6 @@ public class BaskServicesRpcProxy implements IServices {
     }
 
     @Override
-    public void ticketSold(Ticket ticket) throws BasketException {
-        Request req=new Request.Builder().type(RequestType.SELL_TICKET).data(ticket).build();
-        sendRequest(req);
-        Response response=readResponse();
-        if (response.type()== ResponseType.ERROR){
-            String err=response.data().toString();
-            throw new BasketException(err);
-        }
-    }
-
-    @Override
     public void logout(Organiser user, IObserver client) throws BasketException {
         Request req=new Request.Builder().type(RequestType.LOGOUT).data(user).build();
         sendRequest(req);
@@ -165,8 +154,8 @@ public class BaskServicesRpcProxy implements IServices {
     }
 
     @Override
-    public void sendUpdatedList(List<Match> matches) throws BasketException {
-        Request req=new Request.Builder().type(RequestType.UPDATE_MATCHES).data(matches).build();
+    public void sendUpdatedList(Ticket ticket) throws BasketException {
+        Request req=new Request.Builder().type(RequestType.UPDATE_MATCHES).data(ticket).build();
         sendRequest(req);
         Response response=readResponse();
         if (response.type()== ResponseType.ERROR){

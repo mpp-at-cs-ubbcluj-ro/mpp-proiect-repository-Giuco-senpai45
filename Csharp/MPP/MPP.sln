@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "services2", "services2\serv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "networking2", "networking2\networking2.csproj", "{376D114D-72BC-4E87-B62F-12FF845A20B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "protobuff", "protobuff\protobuff.csproj", "{C5B96B2A-49EA-42AD-A581-DAD5D9B9095A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{376D114D-72BC-4E87-B62F-12FF845A20B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{376D114D-72BC-4E87-B62F-12FF845A20B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{376D114D-72BC-4E87-B62F-12FF845A20B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5B96B2A-49EA-42AD-A581-DAD5D9B9095A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5B96B2A-49EA-42AD-A581-DAD5D9B9095A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5B96B2A-49EA-42AD-A581-DAD5D9B9095A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5B96B2A-49EA-42AD-A581-DAD5D9B9095A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

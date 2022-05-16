@@ -2,9 +2,9 @@ package bask.repos;
 
 import bask.model.JdbcUtils;
 import bask.model.Match;
-import bask.model.Organiser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -12,6 +12,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Properties;
 
+@Component
 public class RepoDBMatch implements IRepoMatch {
 
     private JdbcUtils dbUtils;
@@ -23,9 +24,10 @@ public class RepoDBMatch implements IRepoMatch {
 
     @Override
     public void add(Match el) {
+        Match savedMatch = null;
         logger.traceEntry("saving match {}", el);
         Connection con = dbUtils.getConnection();
-        try(PreparedStatement preparedStatement = con.prepareStatement("insert into Match (Team1, Team2, Type, NrOfSeats, Price,Date) values (?, ?, ?, ?, ?, ?)")){
+        try(PreparedStatement preparedStatement = con.prepareStatement("insert into Match (Team1, Team2, Type, NrOfSeats, Price,Date) values (?, ?, ?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS)){
 
             preparedStatement.setString(1, el.getTeam1());
             preparedStatement.setString(2, el.getTeam2());
@@ -34,6 +36,7 @@ public class RepoDBMatch implements IRepoMatch {
             preparedStatement.setDouble(5, el.getPrice());
             preparedStatement.setTimestamp(6, el.getDate());
             int result = preparedStatement.executeUpdate();
+            System.out.println(result);
             logger.trace("Saved {} instances", result);
         } catch (SQLException ex) {
             logger.error(ex);
@@ -42,13 +45,48 @@ public class RepoDBMatch implements IRepoMatch {
         logger.traceExit();
     }
 
+    public Match addREST(Match el) {
+        Match savedMatch = new Match();
+        logger.traceEntry("saving match {}", el);
+        Connection con = dbUtils.getConnection();
+        try(PreparedStatement preparedStatement = con.prepareStatement("insert into Match (Team1, Team2, Type, NrOfSeats, Price,Date) values (?, ?, ?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS)){
+
+            preparedStatement.setString(1, el.getTeam1());
+            preparedStatement.setString(2, el.getTeam2());
+            preparedStatement.setString(3, el.getType());
+            preparedStatement.setInt(4, el.getNrOfSeats());
+            preparedStatement.setDouble(5, el.getPrice());
+            preparedStatement.setTimestamp(6, el.getDate());
+            int result = preparedStatement.executeUpdate();
+
+            ResultSet rs = preparedStatement.getGeneratedKeys();
+            rs.next();
+            Integer auto_id = rs.getInt(1);
+
+            savedMatch.setId(auto_id);
+            savedMatch.setTeam1(el.getTeam1());
+            savedMatch.setTeam2(el.getTeam2());
+            savedMatch.setType(el.getType());
+            savedMatch.setNrOfSeats(el.getNrOfSeats());
+            savedMatch.setPrice(el.getPrice());
+            savedMatch.setDate(el.getDate());
+            System.out.println(result);
+            logger.trace("Saved {} instances", result);
+        } catch (SQLException ex) {
+            logger.error(ex);
+            System.err.println("Error DB" + ex);
+        }
+        logger.traceExit();
+        return savedMatch;
+    }
+
     @Override
     public void delete(Match el) {
         logger.traceEntry("deleting match {}", el);
         Connection con = dbUtils.getConnection();
         try(PreparedStatement preparedStatement = con.prepareStatement("delete from Match where Id = ?")){
 
-            preparedStatement.setInt(1, el.getID());
+            preparedStatement.setInt(1, el.getId());
             int result = preparedStatement.executeUpdate();
             logger.trace("Removed {} instances", result);
         } catch (SQLException ex) {
@@ -67,10 +105,10 @@ public class RepoDBMatch implements IRepoMatch {
             preparedStatement.setString(1, el.getTeam1());
             preparedStatement.setString(2, el.getTeam2());
             preparedStatement.setString(3, el.getType());
-            preparedStatement.setInt(4, el.getID());
+            preparedStatement.setInt(4, el.getNrOfSeats());
             preparedStatement.setDouble(5, el.getPrice());
             preparedStatement.setTimestamp(6, el.getDate());
-            preparedStatement.setInt(7,el.getID());
+            preparedStatement.setInt(7,id);
             int result = preparedStatement.executeUpdate();
             logger.trace("Updated {} instances", result);
         } catch (SQLException ex) {
@@ -99,7 +137,7 @@ public class RepoDBMatch implements IRepoMatch {
                     Timestamp date = result.getTimestamp("Date");
                     match.setId(Id);
                     match.setTeam1(team1);
-                    match.setTeam1(team2);
+                    match.setTeam2(team2);
                     match.setType(type);
                     match.setNrOfSeats(nrOfSeats);
                     match.setPrice(price);

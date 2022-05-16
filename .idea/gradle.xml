@@ -5,6 +5,16 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/BaskRESTServices" />
+        <option name="gradleJvm" value="corretto-16" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/BaskRESTServices" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/JavaSockets" />
         <option name="gradleJvm" value="corretto-16" />
         <option name="modules">
@@ -13,6 +23,7 @@
             <option value="$PROJECT_DIR$/JavaSockets/BaskClient" />
             <option value="$PROJECT_DIR$/JavaSockets/BaskModel" />
             <option value="$PROJECT_DIR$/JavaSockets/BaskNetworking" />
+            <option value="$PROJECT_DIR$/JavaSockets/BaskRESTServices" />
             <option value="$PROJECT_DIR$/JavaSockets/BaskRepos" />
             <option value="$PROJECT_DIR$/JavaSockets/BaskServer" />
             <option value="$PROJECT_DIR$/JavaSockets/BaskServices" />

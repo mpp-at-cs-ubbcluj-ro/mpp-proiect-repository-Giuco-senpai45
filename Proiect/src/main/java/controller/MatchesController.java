@@ -125,7 +125,6 @@ public class MatchesController {
     }
 
     private void resetTextFields(){
-
         textMid.setText(null);
         textCustomerName.setText(null);
         textQuantity.setText(null);

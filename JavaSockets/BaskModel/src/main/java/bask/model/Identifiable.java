@@ -1,6 +1,6 @@
 package bask.model;
 
 public interface Identifiable <Tid> {
-    Tid getID();
+    Tid getId();
     void setId(Tid id);
 }

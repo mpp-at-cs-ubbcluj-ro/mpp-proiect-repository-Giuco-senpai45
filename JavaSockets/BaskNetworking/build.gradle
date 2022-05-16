@@ -12,4 +12,6 @@ repositories {
 dependencies {
     implementation project (':BaskModel')
     implementation project (':BaskServices')
+    implementation group: 'com.google.protobuf', name: 'protobuf-java', version: '3.11.4'
+    implementation 'com.google.protobuf:protobuf-java:3.20.0'
 }

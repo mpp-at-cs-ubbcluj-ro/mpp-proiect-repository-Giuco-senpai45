@@ -12,58 +12,211 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2cc3582-b947-4fd1-9363-9804d4a7b2a3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/persistance2/databases/basket.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/modules/BaskRepos/JavaSockets.BaskRepos.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/modules/JavaSockets.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/protobuffprotocol/BasketProtobufs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/protobuffprotocol/ProtoBaskProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/protobuffprotocol/ProtoBaskWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/protobuffprotocol/ProtoUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/utils/BasketProtobuffConcurrentServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/src/main/java/bask/repos/ORMRepoOrganiser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/src/main/java/org/hibernate/dialect/SQLiteDialect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/src/main/java/org/hibernate/dialect/identity/SQLiteDialectIdentityColumnSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/src/main/resources/Organiser.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaSockets/BaskServer/src/main/java/StartProtobuffServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaSockets/proto/BasketProto.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaSockets/proto/generateclsases.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MPP/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MPP/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MPP/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MPP/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MPP/.idea/dataSources/86747a9a-fb49-4f62-9db6-91201f77f066.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/mpp-proiect-repository-Giuco-senpai45.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/mpp-proiect-repository-Giuco-senpai45.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MPP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MPP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/MPP/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/MPP/v17/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MPP.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MPP.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MPP/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/MPP/App.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MPP/MPP.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MPP/MPP.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MPP/MPP.csproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/MPP/MPP.csproj.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MPP/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MPP/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MPP/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MPP/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MPP/bin/Debug/MPP.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MPP/bin/Debug/MPP.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MPP/bin/Debug/MPP.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MPP/bin/Debug/MPP.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MPP/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MPP/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MPP/obj/Debug/MPP.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MPP/obj/Debug/MPP.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MPP/obj/Debug/MPP.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MPP/obj/Debug/MPP.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MPP/obj/Debug/MPP.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MPP/obj/Debug/MPP.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MPP/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/MPP/packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MPP/repository/RepoDBMatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MPP/repository/RepoDBMatch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MPP/repository/RepoDBOrganiser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MPP/repository/RepoDBOrganiser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MPP/repository/RepoDBTicket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MPP/repository/RepoDBTicket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server2/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/Server2/App.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server2/Server2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Server2/Server2.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server2/StartServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server2/StartServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server2/bin/Debug/Server2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Server2/bin/Debug/Server2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server2/bin/Debug/Server2.exe.config" beforeDir="false" afterPath="$PROJECT_DIR$/Server2/bin/Debug/Server2.exe.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server2/bin/Debug/Server2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server2/bin/Debug/Server2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server2/bin/Debug/model2.dll.config" beforeDir="false" afterPath="$PROJECT_DIR$/Server2/bin/Debug/model2.dll.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server2/bin/Debug/networking2.dll.config" beforeDir="false" afterPath="$PROJECT_DIR$/Server2/bin/Debug/networking2.dll.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server2/bin/Debug/persistance2.dll.config" beforeDir="false" afterPath="$PROJECT_DIR$/Server2/bin/Debug/persistance2.dll.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server2/bin/Debug/services2.dll.config" beforeDir="false" afterPath="$PROJECT_DIR$/Server2/bin/Debug/services2.dll.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server2/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server2/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server2/obj/Debug/Server2.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server2/obj/Debug/Server2.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server2/obj/Debug/Server2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server2/obj/Debug/Server2.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server2/obj/Debug/Server2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Server2/obj/Debug/Server2.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server2/obj/Debug/Server2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Server2/obj/Debug/Server2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server2/obj/Debug/Server2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server2/obj/Debug/Server2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server2/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/Server2/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/client/App.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/client.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/client/client.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/obj/Debug/client.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/client.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/client/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/app.config" beforeDir="false" afterPath="$PROJECT_DIR$/model2/app.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" afterPath="$PROJECT_DIR$/model2/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/bin/Debug/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model2/bin/Debug/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/bin/Debug/model2.dll.config" beforeDir="false" afterPath="$PROJECT_DIR$/model2/bin/Debug/model2.dll.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/model2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/model2/model2.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/model2/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/obj/Debug/model2.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/model2/obj/Debug/model2.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/obj/Debug/model2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/model2/obj/Debug/model2.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model2/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/model2/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/networking2/app.config" beforeDir="false" afterPath="$PROJECT_DIR$/networking2/app.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/networking2/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" afterPath="$PROJECT_DIR$/networking2/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/networking2/bin/Debug/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/networking2/bin/Debug/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/networking2/bin/Debug/model2.dll.config" beforeDir="false" afterPath="$PROJECT_DIR$/networking2/bin/Debug/model2.dll.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/networking2/bin/Debug/networking2.dll.config" beforeDir="false" afterPath="$PROJECT_DIR$/networking2/bin/Debug/networking2.dll.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/networking2/bin/Debug/services2.dll.config" beforeDir="false" afterPath="$PROJECT_DIR$/networking2/bin/Debug/services2.dll.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/networking2/networking2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/networking2/networking2.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/networking2/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/networking2/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/networking2/obj/Debug/networking2.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/networking2/obj/Debug/networking2.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/networking2/obj/Debug/networking2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/networking2/obj/Debug/networking2.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/networking2/obj/Debug/networking2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/networking2/obj/Debug/networking2.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/networking2/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/networking2/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.4.6.0/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.4.6.0/LICENSE.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.4.6.0/System.Runtime.CompilerServices.Unsafe.4.6.0.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.4.6.0/THIRD-PARTY-NOTICES.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.4.6.0/lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.4.6.0/lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.4.6.0/lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.4.6.0/lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.4.6.0/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.4.6.0/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.4.6.0/ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.4.6.0/ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.4.6.0/ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.4.6.0/ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.4.6.0/useSharedDesignerContext.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.4.6.0/version.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistance2/app.config" beforeDir="false" afterPath="$PROJECT_DIR$/persistance2/app.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistance2/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" afterPath="$PROJECT_DIR$/persistance2/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistance2/bin/Debug/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/persistance2/bin/Debug/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistance2/bin/Debug/model2.dll.config" beforeDir="false" afterPath="$PROJECT_DIR$/persistance2/bin/Debug/model2.dll.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistance2/bin/Debug/persistance2.dll.config" beforeDir="false" afterPath="$PROJECT_DIR$/persistance2/bin/Debug/persistance2.dll.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistance2/databases/basket.db" beforeDir="false" afterPath="$PROJECT_DIR$/persistance2/databases/basket.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistance2/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/persistance2/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistance2/obj/Debug/persistance2.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/persistance2/obj/Debug/persistance2.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistance2/obj/Debug/persistance2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/persistance2/obj/Debug/persistance2.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistance2/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/persistance2/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistance2/persistance2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/persistance2/persistance2.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services2/app.config" beforeDir="false" afterPath="$PROJECT_DIR$/services2/app.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services2/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" afterPath="$PROJECT_DIR$/services2/bin/Debug/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services2/bin/Debug/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services2/bin/Debug/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services2/bin/Debug/model2.dll.config" beforeDir="false" afterPath="$PROJECT_DIR$/services2/bin/Debug/model2.dll.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services2/bin/Debug/services2.dll.config" beforeDir="false" afterPath="$PROJECT_DIR$/services2/bin/Debug/services2.dll.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services2/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/services2/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services2/obj/Debug/services2.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/services2/obj/Debug/services2.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services2/obj/Debug/services2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/services2/obj/Debug/services2.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services2/obj/Debug/services2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/services2/obj/Debug/services2.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services2/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/services2/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services2/services2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/services2/services2.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../JavaSockets/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../JavaSockets/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../JavaSockets/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../JavaSockets/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/.gradle/7.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/.gradle/7.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../JavaSockets/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proiect/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proiect/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proiect/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proiect/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proiect/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proiect/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proiect/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proiect/.gradle/workspace-id.txt.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proiect/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proiect/src/main/java/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProiectCs/MPP/MPP/bin/Debug/net6.0-windows/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProiectCs/MPP/MPP/bin/Debug/net6.0-windows/log4j.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProiectCs/MPP/MPP/databases/basket.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProiectCs/MPP/MPP/databases/basket.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProiectCsharp/MPP/.idea/.idea.MPP/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProiectCsharp/MPP/.idea/.idea.MPP/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProiectCsharp/MPP/.vs/MPP/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProiectCsharp/MPP/.vs/MPP/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProiectCsharp/MPP/.vs/MPP/v17/.futdcache.v1" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProiectCsharp/MPP/.vs/MPP/v17/.futdcache.v1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProiectCsharp/MPP/.vs/MPP/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProiectCsharp/MPP/.vs/MPP/v17/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/MPP.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/MPP.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/databases/basket.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/databases/basket.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/obj/Debug/net6.0/MPP.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/obj/Debug/net6.0/MPP.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/obj/Debug/net6.0/MPP.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/obj/Debug/net6.0/MPP.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/obj/Debug/net6.0/MPP.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/obj/Debug/net6.0/MPP.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/obj/Debug/net6.0/MPP.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/obj/Debug/net6.0/MPP.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/repository/RepoDBMatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/repository/RepoDBMatch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/repository/RepoDBOrganiser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/repository/RepoDBOrganiser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/repository/RepoDBTicket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/repository/RepoDBTicket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/repository/Repository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProiectCsharp/MPP/MPP/repository/Repository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskClient/build/classes/java/main/chat/client/StartClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskClient/build/classes/java/main/chat/client/StartClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskClient/build/classes/java/main/chat/client/controllers/MatchesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskClient/build/classes/java/main/chat/client/controllers/MatchesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskClient/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskClient/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskClient/src/main/java/chat/client/StartClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskClient/src/main/java/chat/client/StartClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskClient/src/main/java/chat/client/controllers/MatchesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskClient/src/main/java/chat/client/controllers/MatchesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskModel/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskModel/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskModel/build/classes/java/main/bask/model/Identifiable.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskModel/build/classes/java/main/bask/model/Identifiable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskModel/build/classes/java/main/bask/model/Match.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskModel/build/classes/java/main/bask/model/Match.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskModel/build/classes/java/main/bask/model/Organiser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskModel/build/classes/java/main/bask/model/Organiser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskModel/build/classes/java/main/bask/model/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskModel/build/classes/java/main/bask/model/Ticket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskModel/build/libs/BaskModel-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskModel/build/libs/BaskModel-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskModel/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskModel/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskModel/src/main/java/bask/model/Identifiable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskModel/src/main/java/bask/model/Identifiable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskModel/src/main/java/bask/model/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskModel/src/main/java/bask/model/Match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskModel/src/main/java/bask/model/Organiser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskModel/src/main/java/bask/model/Organiser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskModel/src/main/java/bask/model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskModel/src/main/java/bask/model/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/objectprotocol/BasketClientObjectWorker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/objectprotocol/BasketServicesObjectProxy$ReaderThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/objectprotocol/BasketServicesObjectProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/objectprotocol/ErrorResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/objectprotocol/GetLoggedOrganisersRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/objectprotocol/GetLoggedOrganisersResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/objectprotocol/GetOrganiserCredentialsRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/objectprotocol/GetOrganiserCredentialsResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/objectprotocol/LoginRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/objectprotocol/LogoutRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/objectprotocol/NewMatchesResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/objectprotocol/OkResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/objectprotocol/OrganiserLoggedInResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/objectprotocol/OrganiserLoggedOutResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/objectprotocol/Request.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/objectprotocol/Response.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/objectprotocol/SendMatchesRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/objectprotocol/UpdateResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/rpcprotocol/BaskClientRpcReflectionWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/rpcprotocol/BaskClientRpcReflectionWorker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/rpcprotocol/BaskServicesRpcProxy$ReaderThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/rpcprotocol/BaskServicesRpcProxy$ReaderThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/rpcprotocol/BaskServicesRpcProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/rpcprotocol/BaskServicesRpcProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/rpcprotocol/RequestType.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/rpcprotocol/RequestType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/rpcprotocol/ResponseType.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/rpcprotocol/ResponseType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/classes/java/main/bask/network/utils/BasketObjectConcurrentServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/libs/BaskNetworking-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/libs/BaskNetworking-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/objectprotocol/BasketClientObjectWorker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/objectprotocol/BasketServicesObjectProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/objectprotocol/ErrorResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/objectprotocol/GetLoggedOrganisersRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/objectprotocol/GetLoggedOrganisersResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/objectprotocol/GetOrganiserCredentialsRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/objectprotocol/GetOrganiserCredentialsResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/objectprotocol/LoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/objectprotocol/LogoutRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/objectprotocol/NewMatchesResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/objectprotocol/OkResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/objectprotocol/OrganiserLoggedInResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/objectprotocol/OrganiserLoggedOutResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/objectprotocol/Request.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/objectprotocol/Response.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/objectprotocol/SendMatchesRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/objectprotocol/UpdateResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/rpcprotocol/BaskClientRpcReflectionWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/rpcprotocol/BaskClientRpcReflectionWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/rpcprotocol/BaskServicesRpcProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/rpcprotocol/BaskServicesRpcProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/rpcprotocol/RequestType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/rpcprotocol/RequestType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/rpcprotocol/ResponseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/rpcprotocol/ResponseType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskNetworking/src/main/java/bask/network/utils/BasketObjectConcurrentServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/build/classes/java/main/bask/repos/RepoDBMatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/build/classes/java/main/bask/repos/RepoDBMatch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/build/classes/java/main/bask/repos/RepoDBOrganiser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/build/classes/java/main/bask/repos/RepoDBOrganiser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/build/classes/java/main/bask/repos/RepoDBTicket.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/build/classes/java/main/bask/repos/RepoDBTicket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/build/libs/BaskRepos-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/build/libs/BaskRepos-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/src/main/java/bask/repos/RepoDBMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/src/main/java/bask/repos/RepoDBMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/src/main/java/bask/repos/RepoDBOrganiser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/src/main/java/bask/repos/RepoDBOrganiser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/src/main/java/bask/repos/RepoDBTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskRepos/src/main/java/bask/repos/RepoDBTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskServer/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskServer/build/classes/java/main/StartObjectServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskServer/build/classes/java/main/StartRpcServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskServer/build/classes/java/main/StartRpcServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskServer/build/classes/java/main/chat/server/BasketServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskServer/build/classes/java/main/chat/server/BasketServicesImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskServer/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskServer/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskServer/src/main/java/StartObjectServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskServer/src/main/java/StartRpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskServer/src/main/java/StartRpcServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskServer/src/main/java/chat/server/BasketServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskServer/src/main/java/chat/server/BasketServicesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskServices/build/classes/java/main/bask/services/IObserver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskServices/build/classes/java/main/bask/services/IObserver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskServices/build/classes/java/main/bask/services/IServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskServices/build/classes/java/main/bask/services/IServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskServices/build/libs/BaskServices-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskServices/build/libs/BaskServices-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskServices/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskServices/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskServices/src/main/java/bask/services/IObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskServices/src/main/java/bask/services/IObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaSockets/BaskServices/src/main/java/bask/services/IServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaSockets/BaskServices/src/main/java/bask/services/IServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Proiect/src/main/java/controller/MatchesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proiect/src/main/java/controller/MatchesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../databases/basket.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../databases/basket.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,6 +403,7 @@
       <workItem from="1649597777785" duration="6912000" />
       <workItem from="1649629108026" duration="2511000" />
       <workItem from="1649660469736" duration="656000" />
+      <workItem from="1651099336549" duration="1060000" />
     </task>
     <servers />
   </component>

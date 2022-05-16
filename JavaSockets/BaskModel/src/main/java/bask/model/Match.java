@@ -13,7 +13,6 @@ public class Match implements Identifiable<Integer>, Serializable {
     private Integer nrOfSeats;
     private Timestamp date;
     private Double price;
-    private String state;
 
     public Match(Integer ID, String team1, String team2, String type, Integer nrOfSeats, Double price,Timestamp date) {
         this.ID = ID;
@@ -91,7 +90,7 @@ public class Match implements Identifiable<Integer>, Serializable {
     }
 
     @Override
-    public Integer getID() {
+    public Integer getId() {
         return ID;
     }
 
@@ -100,16 +99,8 @@ public class Match implements Identifiable<Integer>, Serializable {
         ID = id;
     }
 
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
-
     @Override
     public String toString() {
-        return new Date(date.getTime()) + "  " + team1 + "  v.s " + team2 + "  " + type + "  " + price + "  " + nrOfSeats;
+        return  ID +" " + new Date(date.getTime()) + "  " + team1 + "  v.s " + team2 + "  " + type + "  " + price + "  " + nrOfSeats ;
     }
 }
